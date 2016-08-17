@@ -377,7 +377,7 @@ body {
     background: url(../img/1.png) no-repeat;
     background-size: contain;
     width: 80px;
-    right: 60px;
+    right: 5px;
     top: 0%;
     height: 80px;
     position: absolute
@@ -386,7 +386,7 @@ body {
     background: url(../img/2.png);
     background-size: contain;
     width: 48px;
-    left: 58px;
+    left: 0px;
     top: 66%;
     height: 48px;
     position: absolute
@@ -395,7 +395,7 @@ body {
     background: url(../img/3.png);
     background-size: contain;
     width: 32px;
-    left: 165px;
+    left: 43px;
     top: 4%;
     height: 32px;
     position: absolute
@@ -404,7 +404,7 @@ body {
     background: url(../img/4.png);
     background-size: contain;
     width: 17px;
-    right: 130px;
+    right: 93px;
     top: 40%;
     height: 17px;
     position: absolute
@@ -899,7 +899,7 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    text-align: center;
+    text-align: left;
 }
 
 .advantages-list__item {
@@ -952,4 +952,63 @@ body {
     padding: 0;
     margin: 0;
     color: #fff
+}
+.content__link:hover {
+  text-decoration: none;
+  color: #fff
+}
+.content__link {
+  color: #fff;
+  width: 267px!important;
+  height: 47px!important;
+  padding-top: 10px!important;
+  display: block;
+}
+.content__button {
+  width: 267px;
+  height: 47px;
+  border: 1px solid #a89364;
+  font-size: 18px;
+  vertical-align: middle;
+  margin-top: 35px;
+  border-radius: 50px;
+  /* padding-bottom: 2px; */
+
+  margin-left: 256px;
+  color: #fff;
+}
+.infoblock > div {
+  clear: both;
+  content: '';
+  display: table;
+  width: 100%;
+  margin-bottom: 50px;
+
+}
+.infoblock > div > div {
+  width: 50%;
+float: left;
+border-top: 1px solid #fff;
+width: 342px;
+/*margin-right: 202px;
+margin-left: 100px;*/
+}
+.infoblock > div > div:first-child{
+      margin-right: 175px;
+      margin-left: 100px;
+}
+.content__title-advert, .content__title-production, .content__title-integration {
+  clear: both;
+  content: '';
+  display: table;
+}
+.content__title-advert div, .content__title-production div, .content__title-integration div {
+  float: left;
+  margin-right: 30px;
+}
+@media screen and (max-width:768px) {
+  .content-main .content__title {
+        margin: 0 40px;
+        font-size: 57px;
+  }
 }
