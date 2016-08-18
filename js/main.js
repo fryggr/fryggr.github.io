@@ -602,3 +602,16 @@ $(function(){
 	});
 
 }());
+
+$(document).ready(function() {
+  function windowSize(){
+    if($(window).width() < 768) $("section").removeAttr("id");
+  }
+  $(window).on('load resize',windowSize);
+  /*$(window).resize(function(){
+    var windowWidth = $(window).width();
+    console.log('1111');
+    if(windowWidth < 768) $("section").removeAttr("id");
+    //else $("section").attr('id', 'pg1_scr1');;
+  });*/
+});
