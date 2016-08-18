@@ -1030,7 +1030,7 @@ margin-left: 100px;*/
 }
 .integration-img {
   overflow: hidden;
-  width: 81px;
+  width: 58px;
   height: 26px;
 }
 .integration-img img {
@@ -1053,8 +1053,10 @@ margin-left: 100px;*/
     width: 100vw
   }*/
   .content-wrapper {
-    width: 100%;
-    margin: 0 20px;
+    /*width: 100%;
+    margin: 0 20px;*/
+    width: 287px;
+    margin: 0 auto;
   }
   html {
     min-width: 100%
@@ -1123,5 +1125,115 @@ margin-left: 100px;*/
 }
 .content__button {
   margin-left: 0
+}
+.pagination {
+  display: none;
+}
+.content-main .content-wrapper>div:nth-child(2) {
+  right: 107px;
+  top: 69%;
+}
+.content-main .content-wrapper>div:nth-child(3) {
+  left: 233px;
+  top: 58%;
+}
+.content-main .content-wrapper>div:nth-child(4) {
+  left: 3px;
+  top: 80%;
+}
+.content-main .content-wrapper>div:nth-child(5) {
+  right: 57px;
+  top: 4%;
+}
+.content-main .content-wrapper>div:nth-child(6) {
+  right: 96px;
+  top: 17%;
+}
+.text-desc {
+  margin-left: 10px;
+}
+.content-desc .content__accomp div:first-child, .content-desc .content__employ div:first-child, .content-desc .content__projects div:first-child, .content-desc .content__year div:first-child {
+    font-size: 36px;
+}
+.content-desc .content__accomp div:nth-child(2), .content-desc .content__employ div:nth-child(2), .content-desc .content__projects div:nth-child(2), .content-desc .content__year div:nth-child(2) {
+    font-size: 12px;
+}
+.content__year {
+    margin-left: 22px;
+}
+.content-desc .content>div:not(.content__year) {
+  margin-left: 0
+}
+
+.content__year, .content__projects {
+  margin-top: 3px;
+  width: auto;
+  margin-left: 50px;
+}
+.content__accomp, .content__employ {
+  margin-top: 152px;
+  width: auto;
+  margin-left: 43px;
+}
+.content__employ {
+  margin-left: 36px;
+}
+.desc-mob > div {
+  float: left;
+}
+.content-desc .content__year .bar-top {
+  top: -2%;
+  left: 65px;
+}
+.content-desc .content__year .bar-bottom {
+  top: 29%;
+  left: 63px;
+}
+.content-desc .content__projects .bar-top {
+  top: -2%;
+  left: 184px;
+}
+.content-desc .content__projects .bar-bottom {
+  top: 29%;
+  left: 187px;
+}
+.content-desc .content__accomp .bar-top {
+  top: 68%;
+  left: 63px;
+}
+.content-desc .content__accomp .bar-bottom {
+  top: 104%;
+  left: 67px;
+}
+.content-desc .content__employ .bar-top {
+  top: 68%;
+  left: 187px;
+}
+.content-desc .content__employ .bar-bottom {
+  top: 104%;
+  left: 187px;
+}
+.text-desc {
+  top: 27px;
+}
+.content-desc .content-wrapper>div:nth-child(5) {
+  right: 16px;
+  top: 44%;
+}
+.content-desc .content-wrapper>div:nth-child(3) {
+  left: 13px;
+  top: 40%;
+}
+.content-desc .content-wrapper>div:nth-child(2) {
+  right: -115px;
+  top: 77%;
+}
+.content-desc .content-wrapper>div:nth-child(4) {
+  left: 226px;
+  top: 92%;
+}
+.content-desc .content-wrapper>div:nth-child(6) {
+  left: 4px;
+  top: 96%;
 }
 }

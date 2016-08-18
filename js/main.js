@@ -608,6 +608,7 @@ $(document).ready(function() {
     if($(window).width() < 768)
     {
       $("section").removeAttr("id");
+      $(".header-mob").css("display", "none");
     }
   }
   $(window).on('load resize',windowSize);
