@@ -1022,8 +1022,54 @@ margin-left: 100px;*/
   }*/
   .content-wrapper {
     width: 100%;
+    margin: 0 30px;
   }
   html {
     min-width: 100%
+  }
+  .header__logo {
+    margin-left: -22px;
+  }
+  .header__logo div:nth-child(2) {
+    text-transform: uppercase;
+    float: left;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: -43px;
+    margin-top: 2px;
+  }
+  .header__logo {
+    margin-left: -38px;
+  }
+  .header img {
+    max-width: 16%;
+  }
+  .header__mail {
+    float: right;
+    color: #fff;
+    font-size: 12px;
+    border-top: 1px solid #999;
+    padding-top: 5px;
+    margin-top: -8px;
+    font-weight: 100;
+    margin-right: 15px;
+    margin-left: 0
+  }
+  .header__mail a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 100;
+  }
+  .header__tel {
+    float: right;
+    color: #fff;
+    font-size: 12px;
+    border-top: 1px solid #999;
+    padding-top: 5px;
+    margin-top: -8px;
+    font-weight: 100;
+    margin-right: 10px;
   }
 }
