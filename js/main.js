@@ -605,7 +605,10 @@ $(function(){
 
 $(document).ready(function() {
   function windowSize(){
-    if($(window).width() < 768) $("section").removeAttr("id");
+    if($(window).width() < 768)
+    {
+      $("section").removeAttr("id");
+    }
   }
   $(window).on('load resize',windowSize);
   /*$(window).resize(function(){
