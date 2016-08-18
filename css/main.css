@@ -1014,4 +1014,7 @@ margin-left: 100px;*/
   #right_paginat {
     display: none;
   }
+  .content-clients, .content-contacts, .content-desc, .content-main, .content-services, .content-works {
+    width: 100vw;
+  }
 }
