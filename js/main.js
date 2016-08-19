@@ -53,6 +53,7 @@ $(function(){
 		  heightEaseDuration:500,
 		  animateIn:"fadeIn",
 		  animateOut:"fadeOut",
+      responsive: true,
 		  callback: function() {
 		    var self = this;
 		    $('.liquid-slider-panel').each(function() {

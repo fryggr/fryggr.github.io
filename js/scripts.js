@@ -80,7 +80,7 @@ var timer_1             = false;        // РґР»СЏ СѓСЃРєРѕСЂРµ
         pos_to_last_pg();
         nav_rg_hover();         // РѕРїСЂРµРґРµР»РµРЅРёРµ Р°РєС‚РёРІРЅРѕР№ СЃРµРєС†РёРё Рё РІС‹РґРµР»РµРЅРёРµ С‚РѕС‡РєРё РјРµРЅСЋ СЃРїСЂР°РІР°
         corr_pos();             // РІС‹СЃРѕС‚Р° РєР°СЂС‚С‹ Рё С‚РµРЅРё РІ РєРѕРЅС‚Р°РєС‚Р°С…
-        //form_send_resize();     // РїРѕР·РёС†РёСЏ С„РѕСЂРјС‹ РѕР±РЅРѕРІРёС‚СЊ
+        form_send_resize();     // РїРѕР·РёС†РёСЏ С„РѕСЂРјС‹ РѕР±РЅРѕРІРёС‚СЊ
         center_gmap(500);       // С†РµРЅС‚СЂРёСЂРѕРІР°С‚СЊ РєР°СЂС‚Сѓ С‡РµСЂРµР· 0.5 СЃРµРє.
     });
 
@@ -90,7 +90,7 @@ var timer_1             = false;        // РґР»СЏ СѓСЃРєРѕСЂРµ
         clearTimeout(timer_1);
         timer_1 = setTimeout(function() {   // РґР»СЏ СѓСЃРєРѕСЂРµРЅРёСЏ СЃРєСЂРѕР»Р°
              nav_rg_hover();         // РѕРїСЂРµРґРµР»РµРЅРёРµ Р°РєС‚РёРІРЅРѕР№ СЃРµРєС†РёРё Рё РІС‹РґРµР»РµРЅРёРµ С‚РѕС‡РєРё РјРµРЅСЋ СЃРїСЂР°РІР°
-             //form_send_resize();     // РїРѕР·РёС†РёСЏ С„РѕСЂРјС‹ РѕР±РЅРѕРІРёС‚СЊ
+             form_send_resize();     // РїРѕР·РёС†РёСЏ С„РѕСЂРјС‹ РѕР±РЅРѕРІРёС‚СЊ
              ch_lock_top_menu();
         }, 50);
 
@@ -758,7 +758,7 @@ function show_form_send(tp_form) {
 
 
     $('#fade2, .form_send').stop().fadeIn(300);
-    //form_send_resize();
+    form_send_resize();
 }
 
 // СЃРєСЂС‹С‚СЊ С„РѕСЂРјСѓ Р·Р°СЏРІРєРё
@@ -768,13 +768,13 @@ function hide_form_send() {
 }
 
 // РїРѕР·РёС†РёСЏ С„РѕСЂРјС‹ РѕР±РЅРѕРІРёС‚СЊ
-/*function form_send_resize() {
+function form_send_resize() {
 
     $('#fade2').height(1);
     $('#fade2').height($(document).height()).width($(document).width());
     $('.form_send').center();
     $('.form_send_ok').center();
-}*/
+}
 
 
 
@@ -860,7 +860,7 @@ function form_send_ok() {
     $('.form_send').hide();
 
     $('.form_send_ok, #fade2').stop().fadeIn(300);
-    //form_send_resize();
+    form_send_resize();
 
     timer_send_ok = setTimeout(function() {
         $('#fade2, .form_send_ok').fadeOut(300, function() {
