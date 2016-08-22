@@ -1552,7 +1552,7 @@ input[type="text"]:focus:-ms-input-placeholder      {color: transparent;font-siz
   right: 3%;
   width: 300px;
   padding-left: 19px;
-  margin-top: -20px;
+  margin-top: -30px;
   height: 435px;
 }
 .popup-coop__form input[type="text"] {
