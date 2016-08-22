@@ -772,8 +772,8 @@ function form_send_resize() {
 
     $('#fade2').height(1);
     $('#fade2').height($(document).height()).width($(document).width());
-    $('.form_send').center();
-    $('.form_send_ok').center();
+    //$('.form_send').center();
+    //$('.form_send_ok').center();
 }
 
 

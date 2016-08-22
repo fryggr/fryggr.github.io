@@ -40,8 +40,19 @@ function initMap() {
     styles: styleArray,
     zoom: 18
   });
+  var map2 = new google.maps.Map(document.getElementById('map-mobile'), {
+    //center: {lat: 55.741286, lng: 37.706335},
+    center: {lat: 55.740416, lng: 37.707047},
+    // Apply the map style array to the map.
+    styles: styleArray,
+    zoom: 18
+  });
   var marker = new google.maps.Marker({
     map: map,
+    position: myLatLng
+  });
+  var marker2 = new google.maps.Marker({
+    map: map2,
     position: myLatLng
   });
 
@@ -57,73 +68,7 @@ function initMap() {
     position: myLatLng
   });*/
 }
-$(document).ready(function() {
-  function windowSize(){
-    if($(window).width() < 768)
-    {
-      function initMap() {
-        var myLatLng = {lat: 55.741329, lng: 37.707073};
-        var styleArray =
-        [
-            {
-                "stylers": [
-                    {
-                        "hue": "#ff1a00"
-                    },
-                    {
-                        "invert_lightness": true
-                    },
-                    {
-                        "saturation": -100
-                    },
-                    {
-                        "lightness": 33
-                    },
-                    {
-                        "gamma": 0.5
-                    }
-                ]
-            },
-            {
-                "featureType": "water",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#2D333C"
-                    }
-                ]
-            }
-        ];
 
-        // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          //center: {lat: 55.741286, lng: 37.706335},
-          center: {lat: 55.740416, lng: 37.707047},
-          // Apply the map style array to the map.
-          styles: styleArray,
-          zoom: 18
-        });
-        var marker = new google.maps.Marker({
-          map: map,
-          position: myLatLng
-        });
-
-        /*var map-mobile = new google.maps.Map(document.getElementById('map-mobile'), {
-          //center: {lat: 55.741286, lng: 37.706335},
-          center: {lat: 55.740416, lng: 37.707047},
-          // Apply the map style array to the map.
-          styles: styleArray,
-          zoom: 18
-        });
-        var marker-mobile = new google.maps.Marker({
-          map: map-mobile,
-          position: myLatLng
-        });*/
-      }
-    }
-  }
-  $(window).on('load resize',windowSize);
-});
 $(function(){
      $('#liquid-slider').liquidSlider({
 			 dynamicArrowsGraphical: true,
