@@ -953,12 +953,12 @@ body {
     margin: 0;
     color: #fff
 }
-.content__link:hover {
+.content__link:hover, .content__link:focus {
   text-decoration: none;
-  color: #fff
+  color: #fff!important
 }
 .content__link {
-  color: #fff;
+  color: #fff!important;
   width: 267px!important;
   height: 47px!important;
   padding-top: 10px!important;
@@ -1035,6 +1035,111 @@ margin-left: 100px;*/
 }
 .integration-img img {
   margin-left: -23px;
+}
+.popup-coop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.popup-coop__form {
+  display:block;
+  position: absolute;
+  top: 10%;
+  margin: 0 auto;
+  left: 40%;
+  width: 439px;
+  height: 479px;
+  background-color: #fff;
+  border: 1px solid #A89364;
+  border-top: 2px solid #A89364;
+  padding-left: 45px;
+}
+.popup-coop__title {
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 42px;
+  text-align: left;
+}
+.popup-coop__form label {
+  display: block;
+  text-align: left;
+}
+.popup-coop__form input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #B7B9BB;
+  font-size: 17px;
+  font-weight: 300;
+  height: 65px;
+  width: 338px;
+  padding-top: 37px;
+  }
+.popup-coop__form form {
+  margin-top: 19px;
+}
+.popup-coop__form input[type=submit] {
+  width: 341px;
+  clear: both;
+  display: block;
+  height: 46px;
+  border-radius: 20px;
+  border: 1px solid #A89364;
+  color: #000;
+  font-size: 19px;
+  background-color: #fff;
+  margin-top: 80px;
+  font-family:Fira Sans;
+  font-weight:200
+}
+input[type="text"]::-webkit-input-placeholder {
+  color:#000;
+  font-size: 20px;
+  font-weight: 200;
+  font-family:Fira Sans;
+}
+input[type="text"]::-moz-placeholder {
+  color:#000;
+  font-size: 20px;
+  font-weight: 200;
+  font-family:Fira Sans;
+  }/* Firefox 19+ */
+input[type="text"]:-ms-input-placeholder {
+  color:#000;
+  font-size: 20px;
+  font-weight: 200;
+  font-family:Fira Sans;
+}
+input {
+  color: #000
+}
+input[type="text"]:focus::-webkit-input-placeholder {color: transparent}
+input[type="text"]:focus::-moz-placeholder          {color: transparent}
+input[type="text"]:focus:-moz-placeholder           {color: transparent}
+input[type="text"]:focus:-ms-input-placeholder      {color: transparent}
+.popup-coop__form > .popup-coop__close {
+  font-family: "Times New Roman";
+  font-size:38px;
+  font-weight:normal;
+  color:#FF4F60!important;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 92%;
+  top: -1%;
+  cursor: pointer;
+}
+.popup-coop__close > a {
+  text-decoration: none;
+  color:#FF4F60!important;
+}
+.popup-coop__close > a:hover, a:focus{
+  text-decoration: none;
+  color:#FF4F60!important;
 }
 @media screen and (max-width:768px) {
   .desktop-none {

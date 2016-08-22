@@ -84,7 +84,27 @@
     </div>
   </div>
   <div class="pagination"><strong>1 </strong>&ndash; 6</div>
+  <div class="popup-coop">
+    <div class="popup-coop__form">
+      <div class="popup-coop__close">&times;</div>
+      <div class="popup-coop__title">Начать сотрудничество</div>
+      <form action="#" method="get">
+        <label>
+          <input type="text" name="name" id="name" placeholder="Ваше имя">
+        </label>
+        <label>
+          <input type="text" name="tel" id="tel" placeholder="Телефон">
+        </label>
+        <label>
+          <input type="text" name="mail" id="mail" placeholder="E-mail">
+        </label>
+        <input type="submit" value="Отправить запрос">
+    </form>
+  </div>
+</div>
 </section>
+
+
 
 <div class="clearfix"></div>
 
@@ -531,7 +551,8 @@
            data-paralax-show="false"
            data-paralax="false"
            data-anchor="page6">
-    <div id="map" ></div>
+    <div id="map" class="mobile-none"></div>
+    <div id="map-mobile" class="desktop-none"></div>
     <div class="dark-map"></div>
     <div class="content">
       <div>

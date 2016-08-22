@@ -34,8 +34,8 @@ function initMap() {
 
   // Create a map object and specify the DOM element for display.
   var map = new google.maps.Map(document.getElementById('map'), {
-    //center: {lat: 55.741286, lng: 37.706335},
-    center: {lat: 55.740416, lng: 37.707047},
+    center: {lat: 55.741286, lng: 37.706335},
+    //center: {lat: 55.740416, lng: 37.707047},
     // Apply the map style array to the map.
     styles: styleArray,
     zoom: 18
@@ -44,6 +44,18 @@ function initMap() {
     map: map,
     position: myLatLng
   });
+
+  /*var map-mobile = new google.maps.Map(document.getElementById('map-mobile'), {
+    //center: {lat: 55.741286, lng: 37.706335},
+    center: {lat: 55.740416, lng: 37.707047},
+    // Apply the map style array to the map.
+    styles: styleArray,
+    zoom: 18
+  });
+  var marker-mobile = new google.maps.Marker({
+    map: map-mobile,
+    position: myLatLng
+  });*/
 }
 $(function(){
      $('#liquid-slider').liquidSlider({
@@ -621,3 +633,11 @@ $(document).ready(function() {
     //else $("section").attr('id', 'pg1_scr1');;
   });*/
 });
+$(document).ready(function() {
+  $( ".content__link" ).click(function() {
+    $(".popup-coop").css("display","block");
+});
+$( ".popup-coop__close" ).click(function() {
+  $(".popup-coop").css("display","none");
+});
+})
