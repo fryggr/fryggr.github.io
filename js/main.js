@@ -42,10 +42,10 @@ function initMap() {
   });
   var map2 = new google.maps.Map(document.getElementById('map-mobile'), {
     //center: {lat: 55.741286, lng: 37.706335},
-    center: {lat: 55.740416, lng: 37.707047},
+    center: {lat: 55.741216, lng: 37.707047},
     // Apply the map style array to the map.
     styles: styleArray,
-    zoom: 18
+    zoom: 17
   });
   var marker = new google.maps.Marker({
     map: map,
