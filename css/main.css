@@ -1206,13 +1206,14 @@ input[type="text"]:focus:-ms-input-placeholder      {color: transparent;font-siz
   }
   .header__tel {
     float: right;
-    color: #fff;
+    color: #fff!important;
     font-size: 13px;
     border-top: 1px solid #999;
     padding-top: 5px;
     margin-top: -11px;
     font-weight: 100;
     margin-right: 10px;
+    -webkit-appearance: none;
   }
   .content-main .content__title {
     text-transform: uppercase;
@@ -1574,6 +1575,9 @@ height: 445px;
 }
 .content-contacts .content__tel, .content-contacts .content__mail, .content-contacts .content__address, .content-contacts .content__present {
   padding: 10px 0;
+}
+.content-contacts .content__tel {
+  -webkit-appearance: none;
 }
 .content-contacts .content__diamond {
   margin: 10px auto;
