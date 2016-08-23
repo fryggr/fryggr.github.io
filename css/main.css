@@ -1499,8 +1499,8 @@ input[type="text"]:focus:-ms-input-placeholder      {color: transparent;font-siz
   top: 7%;
 }
 .wrapper-slider {
-  width: 287px;
-  margin: 0
+  width: 320px;
+  margin: 0 auto;
 }
 .content-contacts .content {
   width: 100%
@@ -1578,6 +1578,7 @@ height: 445px;
 }
 .content-contacts .content__tel {
   -webkit-appearance: none;
+  color: fff!important;
 }
 .content-contacts .content__diamond {
   margin: 10px auto;
