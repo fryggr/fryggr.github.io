@@ -6,7 +6,7 @@ $(function(){
   });
 });
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
+  $(".owl-carousel1").owlCarousel({
     items:4,
     loop:true,
     margin:0,
@@ -15,6 +15,14 @@ $(document).ready(function(){
     navText: ["", ""],
   });
   $(".owl-carousel2").owlCarousel({
+    items:1,
+    loop:true,
+    margin:0,
+    nav:true,
+    dots: false,
+    navText: ["", ""],
+  });
+  $(".owl-carousel-m").owlCarousel({
     items:1,
     loop:true,
     margin:0,
