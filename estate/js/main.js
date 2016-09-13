@@ -34,11 +34,36 @@ $(document).ready(function(){
   $(".form-consult").click(function() {
     $('#consult, .form-btn').css('display', 'block')
   })
+  $(".burger-icon").click(function() {
+    $('.burger-nav').slideToggle("slow");
+  })
 /*$(".number-rooms__item").click(function() {
   var elem = $(event.target);
   //$('.rooms-choice').addClass('clicked');
   $('> label > .rooms-choice', elem).css("display", "block");
 });*/
+});
+$(document).ready(function(){
+  /*$("img.nature").panorama(
+  {
+    viewport_width: 100,
+    speed: 30000,
+    direction: "left",
+    control_display: "yes",
+    mode_360: false,
+    auto_start: false
+  });*/
+  var pano = $("#myPano").pano({
+        img: "../img/pano.jpg",
+        interval: 6000,
+        speed: 400
+    });
+
+    pano.moveLeft();
+    pano.stopMoving();
+    pano.moveRight();
+    pano.stopMoving();
+
 });
 jQuery(document).ready(function($) {
     $('div.content').css('display', 'block');
