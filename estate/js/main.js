@@ -54,7 +54,7 @@ $(document).ready(function(){
     auto_start: false
   });*/
   var pano = $("#myPano").pano({
-        img: "../../img/pano.jpg",
+        img: "img/pano.jpg",
         interval: 6000,
         speed: 400
     });
