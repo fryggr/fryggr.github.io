@@ -188,6 +188,7 @@
                           ballonOpen: true
                       });
                       myMapMobile.behaviors.disable('scrollZoom');
+                      myMapMobile.behaviors.disable('drag');
                       // Добавляем все метки на карту.
                       myMapMobile.geoObjects.add(myPlacemarkMobile);
 
