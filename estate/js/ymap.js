@@ -187,7 +187,7 @@
                           balloonShadow: true,
                           ballonOpen: true
                       });
-                      myMap.behaviors
+                      myMapMobile.behaviors
                         // Отключаем часть включенных по умолчанию поведений:
                         //  - drag - перемещение карты при нажатой левой кнопки мыши;
                         //  - magnifier.rightButton - увеличение области, выделенной правой кнопкой мыши.
