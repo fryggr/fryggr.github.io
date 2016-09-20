@@ -189,13 +189,14 @@
                           //balloonImageSize: [381, 91],
                           // Балун не имеет тени
                           balloonShadow: true,
-                          ballonOpen: true
+                          ballonOpen: true,
+                          //behaviors:['default', 'scrollZoom']
                       });
-                      myMapMobile.behaviors
+                      myMapMobile.behaviors.disable(['drag', 'scrollZoom', 'multiTouch']);
                         // Отключаем часть включенных по умолчанию поведений:
                         //  - drag - перемещение карты при нажатой левой кнопки мыши;
                         //  - magnifier.rightButton - увеличение области, выделенной правой кнопкой мыши.
-                        .disable(['drag', 'scrollZoom', 'multiTouch']);
+                        //.disable(['drag', 'scrollZoom', 'multiTouch']);
                       //myMapMobile.behaviors.disable('scrollZoom');
                       //myMapMobile.behaviors.disable('drag');
                       // Добавляем все метки на карту.
