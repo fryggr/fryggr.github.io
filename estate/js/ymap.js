@@ -138,7 +138,11 @@
                   balloonShadow: false,
                   ballonOpen: true
               });
-
+                  myMap.behaviors
+                        // Отключаем часть включенных по умолчанию поведений:
+                        //  - drag - перемещение карты при нажатой левой кнопки мыши;
+                        //  - magnifier.rightButton - увеличение области, выделенной правой кнопкой мыши.
+                        .disable(['drag', 'scrollZoom', 'multiTouch'])
               // Добавляем все метки на карту.
               myMap.geoObjects.add(myPlacemark);
               myMap.geoObjects.add(myPlacemark2);
@@ -191,7 +195,7 @@
                         // Отключаем часть включенных по умолчанию поведений:
                         //  - drag - перемещение карты при нажатой левой кнопки мыши;
                         //  - magnifier.rightButton - увеличение области, выделенной правой кнопкой мыши.
-                        .disable(['drag', 'scrollZoom', 'multiTouch'])
+                        .disable(['drag', 'scrollZoom', 'multiTouch']);
                       //myMapMobile.behaviors.disable('scrollZoom');
                       //myMapMobile.behaviors.disable('drag');
                       // Добавляем все метки на карту.
