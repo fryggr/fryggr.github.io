@@ -187,8 +187,13 @@
                           balloonShadow: true,
                           ballonOpen: true
                       });
-                      myMapMobile.behaviors.disable('scrollZoom');
-                      myMapMobile.behaviors.disable('drag');
+                      myMap.behaviors
+                        // Отключаем часть включенных по умолчанию поведений:
+                        //  - drag - перемещение карты при нажатой левой кнопки мыши;
+                        //  - magnifier.rightButton - увеличение области, выделенной правой кнопкой мыши.
+                        .disable(['drag', 'scrollZoom'])
+                      //myMapMobile.behaviors.disable('scrollZoom');
+                      //myMapMobile.behaviors.disable('drag');
                       // Добавляем все метки на карту.
                       myMapMobile.geoObjects.add(myPlacemarkMobile);
 
