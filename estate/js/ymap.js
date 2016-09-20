@@ -191,7 +191,7 @@
                         // Отключаем часть включенных по умолчанию поведений:
                         //  - drag - перемещение карты при нажатой левой кнопки мыши;
                         //  - magnifier.rightButton - увеличение области, выделенной правой кнопкой мыши.
-                        .disable(['drag', 'scrollZoom'])
+                        .disable(['drag', 'scrollZoom', 'multiTouch'])
                       //myMapMobile.behaviors.disable('scrollZoom');
                       //myMapMobile.behaviors.disable('drag');
                       // Добавляем все метки на карту.
