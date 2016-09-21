@@ -155,9 +155,10 @@
 
                   var myMapMobile = new ymaps.Map("YMapsID-mobile", {
                           center: [55.67017379, 37.55885318],
-                          zoom: 14
+                          zoom: 14,
+                          behaviors: ['scrollZoom'],
                       });
-
+                        myMapMobile.behaviors.disable('scrollZoom');
                       myMapMobile.controls
                       // Кнопка изменения масштаба.
                       .add('zoomControl', { left: 5, top: 5 })
