@@ -393,9 +393,12 @@ header {
     display: inline-block
 }
 .main-info__table {
-    background: url(../img/table-bg.png);
+    background: url(../img/table-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center top;
     width: 1140px;
-    height: 261px;
+    /*height: 261px;*/
+    height: 330px;
     margin: 62px auto 0;
     box-shadow: 0 5px 20px 0 rgba(40, 170, 244, .45)
 }
