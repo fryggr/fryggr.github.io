@@ -100,7 +100,7 @@
                   iconImageSize: [73, 95],
                   // Смещение левого верхнего угла иконки относительно
                   // её "ножки" (точки привязки).
-                  iconImageOffset: [-36, -48],
+                  iconImageOffset: [-36, -47],
                   // Размеры содержимого балуна
                   balloonContentSize: [130, 130],
                   balloonPanelMaxMapArea: 0,
