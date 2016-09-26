@@ -39,7 +39,7 @@
                   ballonOpen: true
               });
 
-              var myPlacemark2 = new ymaps.Placemark([55.75399400, 37.62209300], { balloonContent: 'Чайхона, "Азбука вкуса"'}, {
+              var myPlacemark2 = new ymaps.Placemark([55.66597752, 37.54884153], { balloonContent: 'Чайхона, "Азбука вкуса"'}, {
                   // Опции.
                   hideIconOnBalloonOpen:true,
                   // Своё изображение иконки метки.
@@ -61,11 +61,11 @@
                   // Размеры картинки балуна
                   //balloonImageSize: [381, 91],
                   // Балун не имеет тени
-                  balloonShadow: true,
-                  ballonOpen: true,
+                  balloonShadow: false,
+                  ballonOpen: false,
               });
 
-              var myPlacemark3 = new ymaps.Placemark([55.75399400, 37.62209300], { balloonContent: 'Воронцовский парк'}, {
+              var myPlacemark3 = new ymaps.Placemark([55.66712802, 37.54089850], { balloonContent: 'Воронцовский парк'}, {
                   // Опции.
                   hideIconOnBalloonOpen:true,
                   // Своё изображение иконки метки.
@@ -87,11 +87,11 @@
                   // Размеры картинки балуна
                   //balloonImageSize: [381, 91],
                   // Балун не имеет тени
-                  balloonShadow: true,
-                  ballonOpen: true,
+                  balloonShadow: false,
+                  ballonOpen: false,
               });
 
-              var myPlacemark4 = new ymaps.Placemark([55.75399400, 37.622093009], { balloonContent: 'Метро Новые Черемушки'}, {
+              var myPlacemark4 = new ymaps.Placemark([55.67007503, 37.55445975], { balloonContent: 'Метро Новые Черемушки'}, {
                   // Опции.
                   hideIconOnBalloonOpen:true,
                   // Своё изображение иконки метки.
@@ -113,11 +113,11 @@
                   // Размеры картинки балуна
                   //balloonImageSize: [381, 91],
                   // Балун не имеет тени
-                  balloonShadow: true,
-                  ballonOpen: true,
+                  balloonShadow: false,
+                  ballonOpen: false,
               });
 
-              var myPlacemark5 = new ymaps.Placemark([55.75399400, 37.62209300], { balloonContent: 'Школа Газпрома'}, {
+              var myPlacemark5 = new ymaps.Placemark([55.66303851, 37.55900138], { balloonContent: 'Школа Газпрома'}, {
                   // Опции.
                   hideIconOnBalloonOpen:true,
                   // Своё изображение иконки метки.
@@ -139,8 +139,8 @@
                   // Размеры картинки балуна
                   //balloonImageSize: [381, 91],
                   // Балун не имеет тени
-                  balloonShadow: true,
-                  ballonOpen: true,
+                  balloonShadow: false,
+                  ballonOpen: false,
               });
                   myMap.behaviors
                         // Отключаем часть включенных по умолчанию поведений:
