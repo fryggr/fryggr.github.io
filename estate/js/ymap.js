@@ -39,7 +39,7 @@
                   ballonOpen: true
               });
 
-              var myPlacemark2 = new ymaps.Placemark([55.66552156, 37.55149866], { balloonContent: 'Чайхона, "Азбука вкуса"'}, {
+              var myPlacemark2 = new ymaps.Placemark([55.66598244, 37.54969622], { balloonContent: 'Чайхона, "Азбука вкуса"'}, {
                   // Опции.
                   hideIconOnBalloonOpen:true,
                   // Своё изображение иконки метки.
