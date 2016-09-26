@@ -158,8 +158,8 @@
                   myPlacemark.balloon.open();
 
                   var myMapMobile = new ymaps.Map("YMapsID-mobile", {
-                          center: [55.67017379, 37.55885318],
-                          zoom: 14,
+                          center: [55.66590475, 37.54770428],
+                          zoom: 15,
                           behaviors: ['scrollZoom'],
                       });
                         myMapMobile.behaviors.disable('scrollZoom');
@@ -171,7 +171,7 @@
                       // Стандартный набор кнопок
                       .add('mapTools', { left: 35, top: 5 });
 
-                      var myPlacemarkMobile = new ymaps.Placemark([55.66973722, 37.56058648], { balloonContent: 'Тверь, Набережная Степана Разина, д. 20'}, {
+                      var myPlacemarkMobile = new ymaps.Placemark([55.66590475, 37.54770428], { balloonContent: 'Москва, улица Профсоюзная, дом 64'}, {
                           // Опции.
                           hideIconOnBalloonOpen:true,
                           // Своё изображение иконки метки.
@@ -180,7 +180,7 @@
                           iconImageSize: [75, 85],
                           // Смещение левого верхнего угла иконки относительно
                           // её "ножки" (точки привязки).
-                          iconImageOffset: [-60, -75],
+                          iconImageOffset: [-35, -50],
                           // Размеры содержимого балуна
                           balloonContentSize: [130, 130],
                           balloonPanelMaxMapArea: 0,

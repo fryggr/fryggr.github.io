@@ -1730,7 +1730,7 @@ margin-top: 5px;
     margin-top: 20px;
   }
   .scheme-gallery__table {
-    margin-top: 207px;
+    margin-top: 0;
     width: auto;
   }
   ul.thumbs {
@@ -1740,7 +1740,8 @@ margin-top: 5px;
         width: 282px;
   }
   .tab_container {
-        height: 1533px;
+        /*height: 1533px;*/
+        height: auto;
   }
     .burger-menu, .burger-menu .burger-icon {
         display: block;
@@ -1811,7 +1812,10 @@ margin-top: 5px;
         width: auto
     }
     header {
-        height: 84px
+        height: 84px;
+            position: fixed;
+    z-index: 100;
+    width: 100%;
     }
     .header__contacts {
         float: left;
@@ -1838,7 +1842,8 @@ margin-top: 5px;
         background: url(../img/main-slide.jpg) center top no-repeat;
         width: auto;
         height: 570px;
-        margin-bottom: 50px
+        margin-bottom: 50px;
+        margin-top: 84px;
     }
     .main-slide__emblem {
         margin-top: 40px;
@@ -1982,7 +1987,8 @@ margin-top: 5px;
         margin: auto
     }
     .main-apartments {
-        height: 2672px;
+       /* height: 2672px;*/
+       height: auto;
         margin-bottom: 50px;
     }
     .main-apartments__title {
