@@ -1,7 +1,3 @@
-var video =  document.getElementById('video');
-window.onload = function(){
-  video.play();
- }; 
 $(function(){
   $("#slides").slides({
     //width: 100%,
