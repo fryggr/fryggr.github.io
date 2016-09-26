@@ -14,7 +14,7 @@
               // Стандартный набор кнопок
               .add('mapTools', { left: 35, top: 5 });
 
-              var myPlacemark = new ymaps.Placemark([55.66973722, 37.56058648], { balloonContent: 'Москва, ул. Профсоюзная, 64'}, {
+              var myPlacemark = new ymaps.Placemark([55.66590475, 37.54770428], { balloonContent: 'Москва, ул. Профсоюзная, 64'}, {
                   // Опции.
                   hideIconOnBalloonOpen:false,
                   // Своё изображение иконки метки.
@@ -23,7 +23,7 @@
                   iconImageSize: [75, 85],
                   // Смещение левого верхнего угла иконки относительно
                   // её "ножки" (точки привязки).
-                  iconImageOffset: [-60, -75],
+                  //iconImageOffset: [-60, -75],
                   // Размеры содержимого балуна
                   balloonContentSize: [130, 130],
                   // Задаем макет балуна - пользовательская картинка с контентом
@@ -45,10 +45,10 @@
                   // Своё изображение иконки метки.
                   iconImageHref: 'img/map-marker2.png',
                   // Размеры метки.
-                  iconImageSize: [75, 85],
+                  iconImageSize: [73, 95],
                   // Смещение левого верхнего угла иконки относительно
                   // её "ножки" (точки привязки).
-                  iconImageOffset: [-60, -75],
+                  //iconImageOffset: [-60, -75],
                   // Размеры содержимого балуна
                   balloonContentSize: [130, 130],
                   balloonPanelMaxMapArea: 0,
@@ -71,10 +71,10 @@
                   // Своё изображение иконки метки.
                   iconImageHref: 'img/map-marker2.png',
                   // Размеры метки.
-                  iconImageSize: [75, 85],
+                  iconImageSize: [73, 95],
                   // Смещение левого верхнего угла иконки относительно
                   // её "ножки" (точки привязки).
-                  iconImageOffset: [-60, -75],
+                  //iconImageOffset: [-60, -75],
                   // Размеры содержимого балуна
                   balloonContentSize: [130, 130],
                   balloonPanelMaxMapArea: 0,
@@ -97,10 +97,10 @@
                   // Своё изображение иконки метки.
                   iconImageHref: 'img/map-marker2.png',
                   // Размеры метки.
-                  iconImageSize: [75, 85],
+                  iconImageSize: [73, 95],
                   // Смещение левого верхнего угла иконки относительно
                   // её "ножки" (точки привязки).
-                  iconImageOffset: [-60, -75],
+                  //iconImageOffset: [-60, -75],
                   // Размеры содержимого балуна
                   balloonContentSize: [130, 130],
                   balloonPanelMaxMapArea: 0,
@@ -123,10 +123,10 @@
                   // Своё изображение иконки метки.
                   iconImageHref: 'img/map-marker2.png',
                   // Размеры метки.
-                  iconImageSize: [75, 85],
+                  iconImageSize: [73, 95],
                   // Смещение левого верхнего угла иконки относительно
                   // её "ножки" (точки привязки).
-                  iconImageOffset: [-60, -75],
+                  //iconImageOffset: [-60, -75],
                   // Размеры содержимого балуна
                   balloonContentSize: [130, 130],
                   balloonPanelMaxMapArea: 0,
