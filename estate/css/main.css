@@ -1839,15 +1839,25 @@ margin-top: 5px;
         left: 29%
     }
     .main-slide {
-        background: url(../img/main-slide.jpg) center top no-repeat;
+        /*background: url(../img/main-slide.jpg) center top no-repeat;*/
         width: auto;
-        height: 570px;
+        height: 100%;
         margin-bottom: 50px;
         margin-top: 84px;
+        display: flex;
+        justify-content: center;
+    }
+    .main-slide video {
+        display: block;
+        min-width: auto;
+        min-height: auto;
     }
     .main-slide__emblem {
         margin-top: 40px;
         bottom: 0
+    }
+    .main-slide__emblem img {
+        max-width: 80%
     }
     .main-slide__title {
         width: 300px;
