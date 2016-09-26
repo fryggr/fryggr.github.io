@@ -1851,6 +1851,7 @@ margin-top: 5px;
         display: block;
         min-width: auto;
         min-height: auto;
+        left: 0;
     }
     .main-slide__emblem {
         margin-top: 40px;
