@@ -91,7 +91,7 @@
                   ballonOpen: false,
               });
 
-              var myPlacemark4 = new ymaps.Placemark([55.66994338, 37.55648806], { balloonContent: 'Метро Новые Черемушки'}, {
+              var myPlacemark4 = new ymaps.Placemark([55.67007916, 37.55449147], { balloonContent: 'Метро Новые Черемушки'}, {
                   // Опции.
                   hideIconOnBalloonOpen:true,
                   // Своё изображение иконки метки.
@@ -100,7 +100,7 @@
                   iconImageSize: [73, 95],
                   // Смещение левого верхнего угла иконки относительно
                   // её "ножки" (точки привязки).
-                  iconImageOffset: [-60, -70],
+                  //iconImageOffset: [-60, -70],
                   // Размеры содержимого балуна
                   balloonContentSize: [130, 130],
                   balloonPanelMaxMapArea: 0,
