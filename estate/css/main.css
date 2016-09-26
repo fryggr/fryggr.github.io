@@ -557,14 +557,14 @@ header {
         position: absolute;
     background-color: #28aaf4;
     width: 729px;
-    height: 42px;
+    height: 57px;
     border: 1px solid #fff;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .15);
     font-size: 15px;
     color: #fff;
     display: inline-block;
     z-index: 2;
-    bottom: 10%;
+    bottom: 5%;
     text-align: center;
     line-height: 20px;
     margin-left: auto;
