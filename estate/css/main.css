@@ -1840,8 +1840,8 @@ margin-top: 5px;
     }
     .main-slide {
         /*background: url(../img/main-slide.jpg) center top no-repeat;*/
-        width: auto;
-        height: 100%;
+        width: 100%;
+    height: 100%;
         margin-bottom: 50px;
         margin-top: 84px;
         display: flex;
