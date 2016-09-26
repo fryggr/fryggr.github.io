@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+/*jQuery(document).ready(function($) {
     $('div.content').css('display', 'block');
 
     var onMouseOutOpacity = 0.67; // initial opacity
@@ -1157,3 +1157,4 @@ jQuery(document).ready(function($) {
 
     //$.historyInit(pageload, 'system.html');
 });
+*/
