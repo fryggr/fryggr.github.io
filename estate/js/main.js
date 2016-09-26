@@ -1,4 +1,4 @@
-var video =  document.getElementByTagName('video');
+var video =  document.getElementById('video');
 window.onload = function(){
   video.play();
  }; 
