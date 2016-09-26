@@ -552,7 +552,7 @@ header {
     left: 0;
     right: 0
 }
-main-map__title2 {
+.main-map__title2 {
     text-transform: none;
         position: absolute;
     background-color: #28aaf4;
