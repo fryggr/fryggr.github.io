@@ -16,7 +16,7 @@
 
               var myPlacemark = new ymaps.Placemark([55.66590475, 37.54770428], { balloonContent: ''}, {
                   // Опции.
-                  hideIconOnBalloonOpen:true,
+                  hideIconOnBalloonOpen:false,
                   // Своё изображение иконки метки.
                   iconImageHref: 'img/map-marker.png',
                   // Размеры метки.
