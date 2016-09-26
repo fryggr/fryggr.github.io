@@ -27,13 +27,13 @@
                   // Размеры содержимого балуна
                   balloonContentSize: [130, 130],
                   // Задаем макет балуна - пользовательская картинка с контентом
-                  balloonLayout: "default#imageWithContent",
+                  //balloonLayout: "default#imageWithContent",
                   // Картинка балуна
-                  balloonImageHref: 'img/baloon.png',
+                 // balloonImageHref: 'img/baloon.png',
                   // Смещение картинки балуна
-                  balloonImageOffset: [-5, -70],
+                 // balloonImageOffset: [-5, -70],
                   // Размеры картинки балуна
-                  balloonImageSize: [381, 91],
+               //   balloonImageSize: [381, 91],
                   // Балун не имеет тени
                   balloonShadow: false,
                   ballonOpen: true
@@ -48,7 +48,7 @@
                   iconImageSize: [73, 95],
                   // Смещение левого верхнего угла иконки относительно
                   // её "ножки" (точки привязки).
-                  iconImageOffset: [-35, -50],
+                  iconImageOffset: [-45, -50],
                   // Размеры содержимого балуна
                   balloonContentSize: [130, 130],
                   balloonPanelMaxMapArea: 0,
@@ -74,7 +74,7 @@
                   iconImageSize: [73, 95],
                   // Смещение левого верхнего угла иконки относительно
                   // её "ножки" (точки привязки).
-                  iconImageOffset: [-35, -50],
+                  iconImageOffset: [-45, -50],
                   // Размеры содержимого балуна
                   balloonContentSize: [130, 130],
                   balloonPanelMaxMapArea: 0,
@@ -100,7 +100,7 @@
                   iconImageSize: [73, 95],
                   // Смещение левого верхнего угла иконки относительно
                   // её "ножки" (точки привязки).
-                  iconImageOffset: [-35, -50],
+                  iconImageOffset: [-45, -50],
                   // Размеры содержимого балуна
                   balloonContentSize: [130, 130],
                   balloonPanelMaxMapArea: 0,
@@ -126,7 +126,7 @@
                   iconImageSize: [73, 95],
                   // Смещение левого верхнего угла иконки относительно
                   // её "ножки" (точки привязки).
-                  iconImageOffset: [-35, -50],
+                  iconImageOffset: [-45, -50],
                   // Размеры содержимого балуна
                   balloonContentSize: [130, 130],
                   balloonPanelMaxMapArea: 0,
