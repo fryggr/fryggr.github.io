@@ -55,8 +55,8 @@ $(document).ready(function(){
   });*/
   var pano = $("#myPano").pano({
         img: "img/pano.jpg",
-        interval: 6000,
-        speed: 400
+        interval: 15000,
+        speed: 100
     });
 
     pano.moveLeft();
