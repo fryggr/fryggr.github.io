@@ -31,7 +31,7 @@
                   // Картинка балуна
                   balloonImageHref: 'img/baloon2.png',
                   // Смещение картинки балуна
-                  balloonImageOffset: [-5, -70],
+                  balloonImageOffset: [-35, -50],
                   // Размеры картинки балуна
                   balloonImageSize: [381, 91],
                   // Балун не имеет тени
