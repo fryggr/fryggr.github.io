@@ -975,7 +975,8 @@ header {
     font-size: 16px;
     font-family: PTSansRegular, sans-serif;
     margin-top: 90px;
-    line-height: 1.2
+    line-height: 1.2;
+    text-align: justify;
 }
 .main-documentation, .main-documentation__address .logo div:nth-child(1), .main-documentation__files .doc-item {
     font-family: PTSansBold, sans-serif
