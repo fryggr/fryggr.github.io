@@ -275,7 +275,9 @@ header {
     min-width: 100%;
     min-height: 100%;
     width: auto;
-    height: auto
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
 }
 .main-slide__emblem {
     margin-top: 30px;
