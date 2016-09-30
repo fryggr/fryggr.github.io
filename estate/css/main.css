@@ -258,9 +258,10 @@ header {
 .main-slide {
     background-size: cover;
     width: auto;
-    height: 990px;
+    /*height: 990px;*/
+    height: 1078px;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     display: block
 }
 .main-slide:after {
@@ -275,7 +276,8 @@ header {
     min-width: 100%;
     min-height: 100%;
     width: auto;
-    height: auto;
+    /*height: auto;*/
+    height: 900px;
     max-width: 100%;
     object-fit: cover;
 }
