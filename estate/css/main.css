@@ -1619,8 +1619,11 @@ footer .menu ul li a {
 .mobile-none {
     display: block!important
 }
-.burger-menu, .desktop-none {
+.desktop-none {
     display: none!important
+}
+.burger-menu {
+  display: none;
 }
 /*---------------------------------------------*/
 ul.tabs, ul.tabs_child {
