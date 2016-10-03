@@ -30,7 +30,7 @@ CountdownTimer.prototype={
 function CDT(){
 
  // Set countdown limit
- var tl = new Date('2016/10/01 15:56:25');
+ var tl = new Date('2016/11/01 15:56:25');
 
  // You can add time's up message here
  var timer = new CountdownTimer('CDT',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">Time is up!</span></span>');
@@ -39,7 +39,7 @@ function CDT(){
 function CDT2(){
 
  // Set countdown limit
- var tl = new Date('2016/10/01 15:56:25');
+ var tl = new Date('2016/11/01 15:56:25');
 
  // You can add time's up message here
  var timer = new CountdownTimer('CDT2',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">Time is up!</span></span>');

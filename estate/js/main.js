@@ -5,6 +5,34 @@ $(function(){
     responsive: true
   });
 });
+$(document).ready(function () {
+$("div.tab_content").hide();
+$("div.tab_container div.tab_content:first-child").show().addClass("active");
+$(".owl-stage .owl-item:first").addClass("active2");
+
+    $('.owl-carousel3 .item').click(function () {
+        //console.log($(this).attr("tabindex"));
+        if (!$(this).hasClass('active2')){
+          $('.active2').removeClass('active2');
+          $(this).addClass('active2');
+        }
+
+
+        if ($(this).attr("tabindex")) {
+          var atribute = '[index ='+$(this).attr("tabindex")+']';
+          var tab = $(atribute);
+          if (!tab.addClass('').hasClass('active')) {
+            $(".tabsplan .active").removeClass('active').hide();
+              tab.addClass('active').show();
+
+          }
+        else console.log('Данная категория уже выбрана');
+
+      }
+
+      else console.log(" Не обнаруженно индетификатора элемента. Используйте атрибут tabindex")
+    });
+});
 $(document).ready(function(){
   $(".owl-carousel1").owlCarousel({
     items:4,
@@ -25,6 +53,23 @@ $(document).ready(function(){
   $(".owl-carousel-m").owlCarousel({
     items:1,
     loop:true,
+    margin:0,
+    nav:true,
+    dots: false,
+    navText: ["", ""],
+  });
+  $(".owl-carousel3").owlCarousel({
+    items:4,
+    loop:false,
+    margin:0,
+    nav:true,
+    dots: false,
+    navText: ["", ""],
+    responsive: true
+  });
+  $(".owl-carousel3-m").owlCarousel({
+    items:1,
+    loop:false,
     margin:0,
     nav:true,
     dots: false,
