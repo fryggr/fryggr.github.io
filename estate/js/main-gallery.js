@@ -925,6 +925,7 @@ jQuery(document).ready(function($) {
 
     //$.historyInit(pageload, 'system.html');
 });
+/*
 jQuery(document).ready(function($) {
     $('div.content').css('display', 'block');
 
@@ -1079,7 +1080,7 @@ jQuery(document).ready(function($) {
 
     //$.historyInit(pageload, 'system.html');
 });
-
+*/
 jQuery(document).ready(function($) {
     $('div.content').css('display', 'block');
 
