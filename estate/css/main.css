@@ -1656,7 +1656,7 @@ ul.tabs li, ul.tabs_child li  {
 .tab_container ul.tabs li.active, .tab_container ul.tabs li:hover {
       box-shadow: 0 0 0 3px #105982;
 }
-ul.tabs4 .tab_container {
+ul.tabs4 ~ .tab_container {
   height: 520px;
 }
 ul.tabs3 li {
