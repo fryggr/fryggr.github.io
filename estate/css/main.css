@@ -1653,6 +1653,15 @@ ul.tabs li, ul.tabs_child li  {
    -moz-border-radius:16px 16px 0 0;
    -webkit-border-radius:16px 16px 0 0;*/
 }
+.tab_content:not(.tab_content[index="1"]) {
+  height: 425px;
+}
+.tab_content:not(.tab_content[index="1"]) .container {
+  height: auto;
+}
+.tab_content:not(.tab_content[index="1"]) .scheme-gallery__table {
+      margin-top: -56px;
+}
 ul.tabs3 li.active, ul.tabs3 li:hover, ul.tabs4 li.active, ul.tabs4 li:hover {
       box-shadow: 0 0 0 3px #105982;
 }
