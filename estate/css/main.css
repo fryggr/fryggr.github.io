@@ -673,7 +673,8 @@ header {
     margin-top: 27px
 }
 .scheme-variants__img .img-item {
-    position: relative
+    position: relative;
+    width: 260px
 }
 .scheme-variants__img .img-item img{
     max-width: 100%;
@@ -1601,7 +1602,8 @@ footer .menu ul li a {
 }
 .scheme-gallery {
     width: 1100px!important;
-    margin-top: -45px
+    margin-top: -45px;
+    height: 650px;
 }
 .img-item:nth-child(2) .scheme-gallery {
     left: -375px
@@ -1769,7 +1771,8 @@ div.navigation-container {
   margin-bottom: 0;
 }
 #slideshow2-1 img, #slideshow2-2 img, #slideshow2-3 img, #slideshow2-4 img, #slideshow2-5 img, #slideshow2-6 img, #slideshow2-7 img, #slideshow2-8 img {
-  max-width: 41%
+  /*max-width: 41%*/
+  max-width: 100%
 }
 /*---------------------------------------*/
 @media screen and (max-width:768px) {
