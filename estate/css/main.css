@@ -1653,6 +1653,12 @@ ul.tabs li, ul.tabs_child li  {
    -moz-border-radius:16px 16px 0 0;
    -webkit-border-radius:16px 16px 0 0;*/
 }
+.tab_container .tab_content:nth-child(n+2) div.navigation-container{
+  height: 0
+}
+.tab_container .tab_content:nth-child(n+2) .scheme-gallery{
+  height: 400px
+}
 /*
 .tab_content:not([index="1"]) {
   height: 425px;
