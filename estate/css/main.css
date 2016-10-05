@@ -1687,16 +1687,16 @@ ul.tabs3 li {
     height: auto;
 }
 ul.tabs3 li:nth-child(1) .img-item, ul.tabs3 li:nth-child(2) .img-item, ul.tabs3 li:nth-child(3) .img-item{
-  width: 130px;
+  /*width: 130px;*/
 }
 ul.tabs3 li:nth-child(4) .img-item{
-  width: 391px;
+  /*width: 391px;*/
 }
 ul.tabs4 li:nth-child(1) .img-item{
-  width: 500px;
+  /*width: 500px;*/
 }
 ul.tabs4 li:nth-child(2) .img-item{
-  width: 170px;
+  /*width: 170px;*/
 }
 ul.tabs4 li {
 /*height: 233px;
