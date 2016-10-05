@@ -624,11 +624,28 @@
 			buildImage: function(imageData, isSync) {
 				var gallery = this;
 				var nextIndex = this.getNextIndex(imageData.index);
+				//var nextIndex2 = this.getIndex(imageData.index);
 
 				// Construct new hidden span for the image
 				var newSlide = this.$imageContainer
-					.append('<span class="image-wrapper current"><a class="advance-link" rel="history" href="#'+this.data[nextIndex].hash+'" title="'+imageData.title+'"></a></span>')
+					.append('<span class="image-wrapper current"><a class="advance-link" rel="history"  data-lightbox="image-'+this.data[imageData.index].hash+'"></a></span>')
 					.find('span.current').css('opacity', '0');
+
+					$('.content a').removeAttr('href');
+					$('[data-lightbox="image-photo1"]').attr('href', 'img/2-1.jpg');
+					$('[data-lightbox="image-photo2"]').attr('href', 'img/2-2.jpg');
+					$('[data-lightbox="image-photo3"]').attr('href', 'img/2-3.jpg');
+					$('[data-lightbox="image-4"]').attr('href', 'img/2-04.jpg');
+					$('[data-lightbox="image-5"]').attr('href', 'img/2-05.jpg');
+					$('[data-lightbox="image-6"]').attr('href', 'img/2-06.jpg');
+					$('[data-lightbox="image-7"]').attr('href', 'img/3-1.jpg');
+					$('[data-lightbox="image-8"]').attr('href', 'img/3-2.jpg');
+					$('[data-lightbox="image-9"]').attr('href', 'img/3-3.jpg');
+					$('[data-lightbox="image-10"]').attr('href', 'img/3-04.jpg');
+					$('[data-lightbox="image-11"]').attr('href', 'img/4-1.jpg');
+					$('[data-lightbox="image-12"]').attr('href', 'img/4-2.jpg');
+					$('[data-lightbox="image-13"]').attr('href', 'img/4-3.jpg');
+					$('[data-lightbox="image-14"]').attr('href', 'img/4-02.jpg');
 
 				newSlide.find('a')
 					.append(imageData.image)

@@ -1678,7 +1678,7 @@ ul.tabs3 li.active, ul.tabs3 li:hover, ul.tabs4 li.active, ul.tabs4 li:hover {
   box-shadow: 0 0 0 3px #105982;
 }
 ul.tabs4 ~ .tab_container {
-  height: 520px;
+/*  height: 520px;*/
 }
 ul.tabs3 li {
       /*  height: 169px;
@@ -1769,6 +1769,7 @@ div.slideshow img {
 div.navigation-container {
   left: -42%;
   margin-bottom: 0;
+  height: 0
 }
 #slideshow2-1 img, #slideshow2-2 img, #slideshow2-3 img, #slideshow2-4 img, #slideshow2-5 img, #slideshow2-6 img, #slideshow2-7 img, #slideshow2-8 img {
   /*max-width: 41%*/

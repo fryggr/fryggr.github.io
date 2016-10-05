@@ -5,6 +5,13 @@ $(function(){
     responsive: true
   });
 });
+$( document ).on( "ready", function() {
+  $('ul.thumbs a').removeAttr('data-lightbox');
+  $('.content a').removeAttr('href');
+  console.log('111')
+  //$('div.slideshow a').attr('href', 'img/2-1.jpg');
+
+});
 $(document).ready(function () {
 $("div.tab_content").hide();
 $("div.tab_container div.tab_content:first-child").show().addClass("active");

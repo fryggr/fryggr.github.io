@@ -5,16 +5,17 @@
 	<link href="css/galleriffic.css" rel="stylesheet" />
 	<link href="css/owl.carousel.css" rel="stylesheet" />
 	<link href="css/main.css" rel="stylesheet" />
+	<link href="css/lightbox.css" rel="stylesheet">
 	<!--link(href='css/tabulous.css' rel='stylesheet')-->
 	<!--script(type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js")-->
 	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
 	<!--script(src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript")-->
-	<script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript"></script>
+	<!--<script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript"></script>-->
 	<!--link(href="//yandex.st/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet")-->
 	<!--script(src="//yandex.st/jquery/2.0.3/jquery.min.js" type="text/javascript") -->
 	<!--script(src="//api-maps.yandex.ru/2.1/?lang=ru_RU&mode=debug" type="text/javascript")-->
 	<!--script(type='text/javascript' src="js/yapi.js")-->
-	<script type="text/javascript" src="js/ymap.js"></script>
+<!--	<script type="text/javascript" src="js/ymap.js"></script>-->
 </head>
 <!DOCTYPE html>
 <html lang="ru">
@@ -663,13 +664,13 @@
 
 										<ul class="thumbs">
 											<li>
-												<a name="photo1" href="img/2-1.jpg" class="thumb"><img src="img/1var.png" alt="Title #1" /></a>
+												<a name="photo1" data-lightbox="image-1" href="img/2к-1в1.png" class="thumb"><img src="img/1var.png" alt="Title #1" /></a>
 											</li>
 											<li>
-												<a name="photo2" href="img/2-2.jpg" class="thumb"><img src="img/2var.png" alt="Title #2" onload=""/></a>
+												<a name="photo2" data-lightbox="image-2" href="img/2к-1в2.png" class="thumb"><img src="img/2var.png" alt="Title #2" onload=""/></a>
 											</li>
 											<li>
-												<a name="photo3" href="img/2-3.jpg" class="thumb"><img src="img/3var.png" alt="Title #3" onload=""/></a>
+												<a name="photo3" data-lightbox="image-3" href="img/2к-1в3.png" class="thumb"><img src="img/3var.png" alt="Title #3" onload=""/></a>
 											</li>
 										</ul>
 
@@ -998,13 +999,13 @@
 
 										<ul class="thumbs">
 											<li>
-												<a name="photo1" href="img/3-1.jpg" class="thumb"><img src="img/1var.png" alt="Title #1" /></a>
+												<a name="photo1" href="img/3к-1в1.png" class="thumb"><img src="img/1var.png" alt="Title #1" /></a>
 											</li>
 											<li>
-												<a name="photo2" href="img/3-2.jpg" class="thumb"><img src="img/2var.png" alt="Title #2" onload=""/></a>
+												<a name="photo2" href="img/3к-1в2.png" class="thumb"><img src="img/2var.png" alt="Title #2" onload=""/></a>
 											</li>
 											<li>
-												<a name="photo3" href="img/3-3.jpg" class="thumb"><img src="img/3var.png" alt="Title #3" onload=""/></a>
+												<a name="photo3" href="img/3к-1в3.png" class="thumb"><img src="img/3var.png" alt="Title #3" onload=""/></a>
 											</li>
 										</ul>
 
@@ -1202,13 +1203,13 @@
 
 										<ul class="thumbs">
 											<li>
-												<a name="photo1" href="img/4-1.jpg" class="thumb"><img src="img/1var.png" alt="Title #1" /></a>
+												<a name="photo1" href="img/4к-1в1.png" class="thumb"><img src="img/1var.png" alt="Title #1" /></a>
 											</li>
 											<li>
-												<a name="photo2" href="img/4-2.jpg" class="thumb"><img src="img/2var.png" alt="Title #2" onload=""/></a>
+												<a name="photo2" href="img/4к-1в2.png" class="thumb"><img src="img/2var.png" alt="Title #2" onload=""/></a>
 											</li>
 											<li>
-												<a name="photo3" href="img/4-3.jpg" class="thumb"><img src="img/3var.png" alt="Title #3" onload=""/></a>
+												<a name="photo3" href="img/4к-1в3.png" class="thumb"><img src="img/3var.png" alt="Title #3" onload=""/></a>
 											</li>
 										</ul>
 
@@ -2076,6 +2077,7 @@
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/jquery.pano.js"></script>
 <!--script(type='text/javascript' src="js/tabulous.js")-->
-<script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/main-gallery.js"></script>
 <script type="text/javascript" src="js/tabs.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/lightbox.js"></script>
