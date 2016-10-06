@@ -17,6 +17,28 @@ $("div.tab_content").hide();
 $("div.tab_container div.tab_content:first-child").show().addClass("active");
 $(".owl-stage .owl-item:first").addClass("active2");
 
+    $('.owl-carousel3-m .item').click(function () {
+        //console.log($(this).attr("tabindex"));
+        if (!$(this).hasClass('active2')){
+          $('.active2').removeClass('active2');
+          $(this).addClass('active2');
+        }
+
+
+        if ($(this).attr("tabindex")) {
+          var atribute = '[index ='+$(this).attr("tabindex")+']';
+          var tab = $(atribute);
+          if (!tab.addClass('').hasClass('active')) {
+            $(".tabsplan .active").removeClass('active').hide();
+              tab.addClass('active').show();
+
+          }
+        else console.log('Данная категория уже выбрана');
+
+      }
+
+      else console.log(" Не обнаруженно индетификатора элемента. Используйте атрибут tabindex")
+    });
     $('.owl-carousel3 .item').click(function () {
         //console.log($(this).attr("tabindex"));
         if (!$(this).hasClass('active2')){
@@ -81,6 +103,7 @@ $(document).ready(function(){
     nav:true,
     dots: false,
     navText: ["", ""],
+    responsive: true
   });
 
   $(".form-consult").click(function() {

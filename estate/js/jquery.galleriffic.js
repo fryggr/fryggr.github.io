@@ -632,23 +632,23 @@
 					.find('span.current').css('opacity', '0');
 
 					$('.content a').removeAttr('href');
-					$('[data-lightbox="image-photo1"]').attr('href', 'img/2-01.png');
-					$('[data-lightbox="image-photo2"]').attr('href', 'img/2-1.jpg');
-					$('[data-lightbox="image-photo3"]').attr('href', 'img/2-2.jpg');
-					$('[data-lightbox="image-photo4"]').attr('href', 'img/2-3.jpg');
-					$('[data-lightbox="image-5"]').attr('href', 'img/2-04.jpg');
-					$('[data-lightbox="image-6"]').attr('href', 'img/2-05.jpg');
-					$('[data-lightbox="image-7"]').attr('href', 'img/2-06.jpg');
+					$('[data-lightbox="image-photo1"]').attr('href', 'img/2к-1.png');
+					$('[data-lightbox="image-photo2"]').attr('href', 'img/2к-1в1.png');
+					$('[data-lightbox="image-photo3"]').attr('href', 'img/2к-1в2.png');
+					$('[data-lightbox="image-photo4"]').attr('href', 'img/2к-1в3.png');
+					$('[data-lightbox="image-5"]').attr('href', 'img/2к-2панорамная.jpg');
+					$('[data-lightbox="image-6"]').attr('href', 'img/2к-3.jpg');
+					$('[data-lightbox="image-7"]').attr('href', 'img/2к-4.jpg');
 					$('[data-lightbox="image-8"]').attr('href', 'img/3к-1.jpg');
-					$('[data-lightbox="image-9"]').attr('href', 'img/3-1.jpg');
-					$('[data-lightbox="image-10"]').attr('href', 'img/3-2.jpg');
-					$('[data-lightbox="image-11"]').attr('href', 'img/3-3.jpg');
-					$('[data-lightbox="image-12"]').attr('href', 'img/3-04.jpg');
+					$('[data-lightbox="image-9"]').attr('href', 'img/3к-1в1.png');
+					$('[data-lightbox="image-10"]').attr('href', 'img/3к-1в2.png');
+					$('[data-lightbox="image-11"]').attr('href', 'img/3к-1в3.png');
+					$('[data-lightbox="image-12"]').attr('href', 'img/3к-2.jpg');
 					$('[data-lightbox="image-13"]').attr('href', 'img/4к-1.jpg');
-					$('[data-lightbox="image-14"]').attr('href', 'img/4-1.jpg');
-					$('[data-lightbox="image-15"]').attr('href', 'img/4-2.jpg');
-					$('[data-lightbox="image-16"]').attr('href', 'img/4-3.jpg');
-					$('[data-lightbox="image-17"]').attr('href', 'img/4-02.jpg');
+					$('[data-lightbox="image-14"]').attr('href', 'img/4к-1в1.png');
+					$('[data-lightbox="image-15"]').attr('href', 'img/4к-1в2.png');
+					$('[data-lightbox="image-16"]').attr('href', 'img/4к-1в3.png');
+					$('[data-lightbox="image-17"]').attr('href', 'img/4к-2.jpg');
 
 
 				newSlide.find('a')

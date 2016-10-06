@@ -1781,6 +1781,7 @@ div.navigation-container {
 }
 a.thumb {
   width: 110px;
+  padding: 0
 }
 ul.thumbs img {
   max-width: 100%;
@@ -1831,9 +1832,10 @@ ul.thumbs img {
   .scheme-gallery {
     width: auto!important;
     margin-top: 20px;
+    height: auto!important;
   }
   .scheme-gallery__table {
-    margin-top: 0;
+    margin-top: 0!important;
     width: auto;
   }
   ul.thumbs {
