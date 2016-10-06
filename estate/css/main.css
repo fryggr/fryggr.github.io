@@ -2160,8 +2160,9 @@ ul.thumbs img {
         height: 86px
     }
     .main-apartments__desc .number-rooms__item .cost div:nth-child(1) {
-        font-size: 13px;
-        margin-left: 0
+        font-size: 14px;
+        margin-left: 0;
+        -webkit-text-size-adjust: 100%;
     }
     .main-apartments__desc .number-rooms__item .cost div:nth-child(3) {
         font-size: 22px;
