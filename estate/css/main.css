@@ -1779,6 +1779,12 @@ div.navigation-container {
   /*max-width: 41%*/
   max-width: 100%
 }
+a.thumb {
+  width: 110px;
+}
+ul.thumbs img {
+  max-width: 100%;
+}
 /*---------------------------------------*/
 @media screen and (max-width:768px) {
   .owl-carousel3-m .owl-controls {

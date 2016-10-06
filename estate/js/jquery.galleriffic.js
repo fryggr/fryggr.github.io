@@ -632,7 +632,7 @@
 					.find('span.current').css('opacity', '0');
 
 					$('.content a').removeAttr('href');
-					$('[data-lightbox="image-photo1"]').attr('href', 'img/2к-1.jpg');
+					$('[data-lightbox="image-photo1"]').attr('href', 'img/2-01.png');
 					$('[data-lightbox="image-photo2"]').attr('href', 'img/2-1.jpg');
 					$('[data-lightbox="image-photo3"]').attr('href', 'img/2-2.jpg');
 					$('[data-lightbox="image-photo4"]').attr('href', 'img/2-3.jpg');
