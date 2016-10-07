@@ -2160,7 +2160,7 @@ ul.thumbs img {
     }
     .main-apartments__desc .number-rooms__item .cost {
         /*height: 86px*/
-        height: 95px;
+        height: 100px;
     }
     .main-apartments__desc .number-rooms__item .cost div:nth-child(1) {
         /*font-size: 14px;*/
