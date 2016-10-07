@@ -119,15 +119,7 @@ $(document).ready(function(){
 });*/
 });
 $(document).ready(function(){
-  /*$("img.nature").panorama(
-  {
-    viewport_width: 100,
-    speed: 30000,
-    direction: "left",
-    control_display: "yes",
-    mode_360: false,
-    auto_start: false
-  });*/
+
   var pano = $("#myPano").pano({
         img: "img/pano.jpg",
         interval: 15000,

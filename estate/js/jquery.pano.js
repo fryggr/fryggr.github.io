@@ -67,7 +67,7 @@ https://seancoyne.github.io/pano
 			return true;
 		};
 
-		var dragMove = function(xPos, startPosition, cb) {
+		/*var dragMove = function(xPos, startPosition, cb) {
 
 			// dont move if you're outside the image
 			if (!insideImage(xPos)) {
@@ -80,7 +80,7 @@ https://seancoyne.github.io/pano
 			// move it
 			moveBackgroundBy(diff, 0, cb);
 
-		};
+		};*/
 
 		var leftMover,
 			rightMover,
