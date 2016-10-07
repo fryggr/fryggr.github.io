@@ -2465,7 +2465,8 @@ ul.thumbs img {
     .main-consult__form {
         padding: 40px 20px;
         margin: 21px auto;
-        width: auto;
+        /*width: auto;*/
+        width: 100%;
         height: auto
     }
     .main-consult__form .form-title {
@@ -2499,7 +2500,8 @@ ul.thumbs img {
         height: 1px;
         margin-top: 0;
         -webkit-transform: none;
-        transform: none
+        transform: none;
+        margin-bottom: 0;
     }
     footer .menu {
         padding-right: 30px;
