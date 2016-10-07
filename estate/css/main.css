@@ -1813,7 +1813,8 @@ ul.thumbs img {
   ul.tabs li, ul.tabs_child li{
     height: auto;
     margin-bottom: 10px;
-    width: 145px;
+  /*  width: 145px;*/
+  width: 47%;
   }
   .scheme-variants__img img{
     max-width: 100%;
