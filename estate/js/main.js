@@ -1,7 +1,8 @@
 $(function(){
  $("#slides").slides({
    width: 333,
-   height: 709
+   height: 709,
+   responsive: true
  });
 });
 $( document ).on( "ready", function() {
