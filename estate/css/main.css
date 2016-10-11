@@ -491,6 +491,12 @@ header {
     opacity: .4;
     color: #eee
 }
+.slidesContainer, .slidesControl {
+  width: 100%!important;
+}
+.slidesContainer .slidesControl > img {
+  width: 100%!important;
+}
 #slides { position: relative;}
 #slides .slidesNext, #slides .slidesPrevious {
     position: absolute;
