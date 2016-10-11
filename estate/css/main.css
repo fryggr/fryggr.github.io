@@ -458,7 +458,7 @@ header {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    cursor: move
+    cursor: auto;
 }
 .main-gallery__slider .controls {
     position: relative;
@@ -824,7 +824,8 @@ header {
     margin-top: 11px
 }
 .select-apartments__choice .choice__form textarea {
-    height: 104px
+    height: 104px;
+    resize: none;
 }
 .choice-btn {
     background: url(../img/choice-btn.png) no-repeat;
@@ -1408,7 +1409,8 @@ header {
     height: 42px;
     color: #828282;
     margin-bottom: 10px;
-    margin-top: 11px
+    margin-top: 11px;
+    resize: none;
 }
 .main-consult__form textarea {
     height: 104px
@@ -1496,108 +1498,7 @@ footer .menu ul li a {
     margin-left: 30px;
     margin-right: 0
 }
-/*
-.tabs li, .tabs ul, .tabs2 li, .tabs2 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none
-}
-.tabs {
-    font: 400 11px Arial, Sans-serif;
-    color: #404040
-}
-.tabs ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-.tabs, .tabs input[type=radio]:checked+label {
-    position: relative
-}
-.tabs input[type=radio]+label, .tabs li {
-    display: block
-}
-.tabs input[type=radio], .tabs li>div {
-    position: absolute
-}
-.tabs li>div {
-    width: 100%
-}
-.tabs input[type=radio]+label {
-    cursor: pointer;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none
-}
-.tabs input[type=radio]:checked+label {
-    z-index: 1;
-    cursor: pointer
-}
-.tabs input[type=radio] {
-    opacity: 0
-}
-.tabs input[type=radio]~div {
-    display: none
-}
-.tabs input[type=radio]:checked:not(:disabled)~div {
-    display: block
-}
-.tabs input[type=radio]:disabled+label {
-    opacity: .5;
-    cursor: no-drop
-}
-.tabs2 ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-.tabs2, .tabs2 input[type=radio]:checked+label {
-    position: relative
-}
-.tabs2 input[type=radio]+label, .tabs2 li {
-    display: block
-}
-.tabs2 input[type=radio], .tabs2 li>div {
-    position: absolute
-}
-.tabs2 li>div {
-    width: 100%
-}
-.tabs2 input[type=radio]+label {
-    cursor: pointer;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none
-}
-.tabs2 input[type=radio]:checked+label {
-    z-index: 1;
-    cursor: pointer
-}
-.tabs2 input[type=radio] {
-    opacity: 0
-}
-.tabs2 input[type=radio]~div {
-    display: none
-}
-.tabs2 input[type=radio]:checked:not(:disabled)~div {
-    display: block
-}
-#tabs-0-01~div {
-    display: block
-}
-.tabs2 input[type=radio]:disabled+label {
-    opacity: .5;
-    cursor: no-drop
-}
-*/
+
 .apartments-btn {
     position: relative;
     top: 0
@@ -1628,6 +1529,50 @@ footer .menu ul li a {
 }
 .burger-menu {
   display: none;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 6;/* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    /*background-color: #fefefe;*/
+    margin: 15% auto; /* 15% from the top and centered */
+    /*padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    width: auto;
+}
+.modal-content .main-consult__form {
+  border: 0;
+  background-color: rgba(238, 255, 218, 1);
+  position: relative;
+}
+.close {
+  font-family: PantonExtraLight;
+  font-weight: 700;
+  font-size: 28px;
+  position: absolute;
+  left: 95.5%;
+  top: 1%;
+}
+#myModal2 .main-consult__form p, #myModal3 .main-consult__form p {
+  color: #252525;
+  font-size: 24px;
+  font-family: PTSansBold,sans-serif;
+}
+#myModal2 .main-consult__form .close, #myModal3 .main-consult__form .close {
+  left: 96%;
 }
 /*---------------------------------------------*/
 ul.tabs, ul.tabs_child {
@@ -1789,6 +1734,15 @@ ul.thumbs img {
 }
 /*---------------------------------------*/
 @media screen and (max-width:768px) {
+  .modal {
+        top: 6%;
+  }
+  .close {
+    left: 92.5%;
+  }
+  #myModal2 .main-consult__form .close, #myModal3 .main-consult__form .close {
+        left: 92%;
+  }
   .owl-carousel3-m .owl-controls {
         width: 66px;
         position: absolute;
@@ -1878,7 +1832,7 @@ ul.thumbs img {
         background-repeat: repeat;
         background-image: url(../img/bg-header.png);
         width: 320px;
-        height: 410px;
+        height: 310px;
         position: absolute;
         z-index: 3;
         right: 0;

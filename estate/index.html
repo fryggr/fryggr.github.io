@@ -30,7 +30,6 @@
 						<li><a href="#apart">Квартиры</a></li>
 						<li><a href="#YMapsID-mobile">Местоположение	</a></li>
 						<li><a href="#YMapsID-mobile">Инфраструктура				</a></li>
-						<li><a href="#doc">Документация	</a></li>
 						<li><a href="#office">Офис продаж		</a></li>
 					</ul>
 				</div>
@@ -40,7 +39,6 @@
 					<li><a href="#apart">Квартиры</a></li>
 					<li><a href="#YMapsID">Местоположение	</a></li>
 					<li><a href="#YMapsID">Инфраструктура				</a></li>
-					<li><a href="#doc">Документация	</a></li>
 					<li><a href="#office">Офис продаж</a></li>
 				</ul>
 			</div>
@@ -95,7 +93,7 @@
 					</tr>
 					<tr>
 						<th>Стоимость квартир:</th>
-						<td>от 19500 тыс. руб до 45250 тыс. руб</td>
+						<td>от 19,5 до 45,25 млн. руб.</td>
 				</tr>
 				</table>
 			</div>
@@ -121,7 +119,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="main-gallery">
+	<div class="main-gallery mobile-none">
 		<div class="main-gallery__title">Галерея</div>
 		<div id="myPano" class="main-gallery__slider pano">
 			<div class="controls">
@@ -345,7 +343,7 @@
 									</tr>
 									<tr>
 										<th>Цена:</th>
-										<td>19500000</td>
+										<td>19 500 000 р.</td>
 									</tr>
 									<tr>
 										<th>Этаж:</th>
@@ -419,7 +417,7 @@
 									</tr>
 									<tr>
 										<th>Цена:</th>
-										<td>21725000</td>
+										<td>21 725 000 р.</td>
 									</tr>
 									<tr>
 										<th>Этаж:</th>
@@ -494,7 +492,7 @@
 				</tr>
 				<tr>
 					<th>Цена:</th>
-					<td>21350000</td>
+					<td>21 350 000 р.</td>
 				</tr>
 				<tr>
 					<th>Этаж:</th>
@@ -568,7 +566,7 @@
 </tr>
 <tr>
 <th>Цена:</th>
-<td>25125000</td>
+<td>25 125 000 р.</td>
 </tr>
 <tr>
 <th>Этаж:</th>
@@ -683,7 +681,7 @@
 									</tr>
 									<tr>
 										<th>Цена:</th>
-										<td>25825000</td>
+										<td>25 825 000 р.</td>
 									</tr>
 									<tr>
 										<th>Этаж:</th>
@@ -757,7 +755,7 @@
 									</tr>
 									<tr>
 										<th>Цена:</th>
-										<td>2502500</td>
+										<td>2 502 500 р.</td>
 									</tr>
 									<tr>
 										<th>Этаж:</th>
@@ -873,7 +871,7 @@
 									</tr>
 									<tr>
 										<th>Цена:</th>
-										<td>27250000</td>
+										<td>27 250 000 р.</td>
 									</tr>
 									<tr>
 										<th>Этаж:</th>
@@ -948,7 +946,7 @@
 									</tr>
 									<tr>
 										<th>Цена:</th>
-										<td>32400000</td>
+										<td>32 400 000 р.</td>
 									</tr>
 									<tr>
 										<th>Этаж:</th>
@@ -997,9 +995,48 @@
 
 			</div>
 		</div>
-		<div class="apartments-btn mobile-none"> Заявка</div>
+		<div class="apartments-btn mobile-none"  id="myBtn"> Заявка</div>
+		<div id="myModal" class="modal">
+		  <div class="modal-content">
+
+				<div class="main-consult__form">
+					<span class="close">x</span>
+					<div class="form-title">Получить консультацию</div>
+					<div class="form-list">
+						<ul>
+							<li>По телефону +7 (495) 775 01 85 <a href="#">обратный звонок</a></li>
+							<li>Сегодня мы работаем с 9.00 до 21.00</li>
+							<li>ул. Профсоюзная 64, корп. 2</li>
+							<!-- <li>Или заполните <a class="form-consult">форму консультации</a></li> -->
+							<li>Или заполните форму консультации</li>
+						</ul>
+					</div>
+					<form action="#" method="get" id="consult">
+						<label for="name">
+							<input type="text" name="name" id="name" placeholder="Ваше имя">
+						</label>
+						<label for="tel">
+							<input type="text" name="tel" id="tel" placeholder="Ваш телефон">
+						</label>
+						<label for="name">
+							<textarea name="text" id="name" placeholder="Ваш комментарий"></textarea>
+						</label>
+					</form>
+					<div class="form-btn" id="myBtn2">отправить заявку</div>
+				</div>
+		  </div>
+		</div>
+		<div id="myModal2" class="modal">
+			<div class="modal-content">
+
+				<div class="main-consult__form">
+					<span class="close">x</span>
+					<p>Заявка успешно отправлена!</p>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="apartments-btn desktop-none">Заявка </div>
+	<div class="apartments-btn desktop-none" id="myBtn-m">Заявка </div>
 	<div class="select-apartments">
 		<div class="select-apartments__img"><img src="img/select-img.png"></div>
 		<div class="select-apartments__choice">
@@ -1021,8 +1058,17 @@
 						<textarea name="text" id="name" placeholder="Наименование квартиры"></textarea>
 					</label>
 				</form>
-				<div class="choice-btn">Отправить запрос</div>
+				<div class="choice-btn"  id="myBtn3">Отправить запрос</div>
 				<div class="choice-view"><a href="#">заявка на просмотр квартиры</a></div>
+				<div id="myModal3" class="modal">
+					<div class="modal-content">
+
+						<div class="main-consult__form">
+							<span class="close">x</span>
+							<p>Запрос успешно отправлен!</p>
+						</div>
+					</div>
+				</div>
 			</div>
 			<!--<div class="choice-reset">
 				<div>&times; </div>
@@ -1302,7 +1348,7 @@
 					<textarea name="text" id="name" placeholder="Ваш комментарий"></textarea>
 				</label>
 			</form>
-			<div class="form-btn">отправить заявку</div>
+			<div class="form-btn" id="myBtn4">отправить заявку</div>
 		</div>
 	</div>
 	<footer>
@@ -1311,7 +1357,7 @@
 				<div class="hours">
 					<ul>
 						<li>Время работы:</li>
-						<li>с 10.00 до 18.00</li>
+						<li>9.00 до 21.00</li>
 						<li>сб, вс - выходной</li>
 					</ul>
 				</div>
@@ -1320,7 +1366,7 @@
 					<ul>
 						<li>Наш адрес:</li>
 						<li>г. Москва, ул.</li>
-						<li>Комсомольская, д.4, оф.46</li>
+						<li>ул. Профсоюзная 64, корп. 2</li>
 					</ul>
 				</div>
 				<div class="hr desktop-none"></div>
@@ -1333,7 +1379,6 @@
 					<li class="mobile-none"><a href="#YMapsID">Инфраструктура		</a></li>
 					<li class="desktop-none"><a href="#YMapsID-mobile">Местоположение	</a></li>
 					<li class="desktop-none"><a href="#YMapsID-mobile">Инфраструктура				</a></li>
-					<li><a href="#doc">Документация	</a></li>
 					<li><a href="#office">Офис продаж</a></li>
 				</ul>
 				<div class="mobile-none">Copyright © 2016. ЖК Дирижабль </div>
