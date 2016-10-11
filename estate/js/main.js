@@ -1,9 +1,8 @@
 $(function(){
-  $("#slides").slides({
-    //width: 100%,
-    height: 690,
-    responsive: true
-  });
+ $("#slides").slides({
+   width: 333,
+   height: 709
+ });
 });
 $( document ).on( "ready", function() {
   $('ul.thumbs a').removeAttr('data-lightbox');
@@ -142,6 +141,7 @@ var modal = document.getElementById('myModal');
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 var btn4 = document.getElementById("myBtn4");
+var btn5 = document.getElementById("myBtn5");
 var btn_m = document.getElementById("myBtn-m");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -156,6 +156,9 @@ var btn2 = document.getElementById("myBtn2");
 var span2 = document.getElementsByClassName("close")[1];
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
+    modal.style.display = "block";
+}
+btn5.onclick = function() {
     modal.style.display = "block";
 }
 

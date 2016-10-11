@@ -491,6 +491,7 @@ header {
     opacity: .4;
     color: #eee
 }
+#slides { position: relative;}
 #slides .slidesNext, #slides .slidesPrevious {
     position: absolute;
     top: 48%;
@@ -500,7 +501,7 @@ header {
     margin-top: -32px;
     padding-top: 32px;
     display: block;
-    z-index: 101;
+    z-index: 83;
     overflow: hidden;
     background: url(../img/navigation-previous.png) no-repeat
 }
@@ -514,7 +515,8 @@ header {
     margin: 0;
     position: absolute;
     top: 634px;
-    z-index: 5
+    z-index: 5;
+    display: none;
 }
 .slidesPagination li {
     float: left;
