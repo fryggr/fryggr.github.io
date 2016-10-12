@@ -146,6 +146,9 @@ function recaptchaCallback() {
   authCaptcha = grecaptcha.render('auth_captcha', {
     'sitekey' : '6LccBAkUAAAAAIWOWdJKxDiG3Ci5_y0bmCIjVJic'
   });
+  authCaptcha2 = grecaptcha.render('auth_captcha', {
+    'sitekey' : '6LccBAkUAAAAAIWOWdJKxDiG3Ci5_y0bmCIjVJic'
+  });
 }
 // Get the modal
 var modal = document.getElementById('myModal');
@@ -165,6 +168,9 @@ modal2.onsubmit = function() {
   if (grecaptcha.getResponse()!='') {
     modal3.style.display = "block";
     modal.style.display = "none";
+    captcha.innerHTML='';
+  }
+  else {
     captcha.innerHTML='Для регистрации необходимо пройти проверку на робота. Для этого подтвердите capthca.';
   }
 }
@@ -174,6 +180,10 @@ form3.onsubmit = function() {
   if (grecaptcha.getResponse()!='') {
     modal3.style.display = "block";
     //modal.style.display = "none";
+    captcha.innerHTML='';
+  }
+  else {
+    captcha.innerHTML='Для регистрации необходимо пройти проверку на робота. Для этого подтвердите capthca.';
   }
 }
 // Get the button that opens the modal
@@ -242,6 +252,10 @@ form1.onsubmit = function() {
   event.preventDefault();
   if (grecaptcha.getResponse()!='') {
     modal3.style.display = "block";
+    captcha.innerHTML='';
+  }
+  else {
+    captcha.innerHTML='Для регистрации необходимо пройти проверку на робота. Для этого подтвердите capthca.';
   }
 }
 // btn4.onclick = function() {
