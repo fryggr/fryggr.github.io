@@ -184,7 +184,7 @@ form3.onsubmit = function() {
   event.preventDefault();
   if (grecaptcha.getResponse()!='') {
     modal3.style.display = "block";
-    modal.style.display = "none";
+  //  modal.style.display = "none";
     captcha2.innerHTML='';
     grecaptcha.reset(feedbackCaptcha);
   }
