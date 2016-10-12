@@ -854,6 +854,9 @@ header {
 .main-consult__form .g-recaptcha > div {
   margin: auto;
 }
+#feedback_captcha > div, #auth_captcha > div {
+  margin: auto;
+}
 .select-apartments__choice .choice__form .choice-btn:hover {
     background: url(../img/choice-btn.png) 0 -45px no-repeat
 }

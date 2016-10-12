@@ -137,7 +137,7 @@ $(document).ready(function(){
 });
 var feedbackCaptcha;
 var authCaptcha;
-
+var authCaptcha2;
 function recaptchaCallback() {
   feedbackCaptcha = grecaptcha.render('feedback_captcha', {
     'sitekey' : '6LccBAkUAAAAAIWOWdJKxDiG3Ci5_y0bmCIjVJic'
@@ -146,7 +146,8 @@ function recaptchaCallback() {
   authCaptcha = grecaptcha.render('auth_captcha', {
     'sitekey' : '6LccBAkUAAAAAIWOWdJKxDiG3Ci5_y0bmCIjVJic'
   });
-  authCaptcha2 = grecaptcha.render('auth_captcha', {
+  
+  authCaptcha2 = grecaptcha.render('auth_captcha2', {
     'sitekey' : '6LccBAkUAAAAAIWOWdJKxDiG3Ci5_y0bmCIjVJic'
   });
 }
@@ -171,7 +172,7 @@ modal2.onsubmit = function() {
     captcha.innerHTML='';
   }
   else {
-    captcha.innerHTML='Для регистрации необходимо пройти проверку на робота. Для этого подтвердите capthca.';
+    captcha.innerHTML='Для отправки заявки необходимо пройти проверку на робота. Для этого подтвердите capthca.';
   }
 }
 var form3 = document.getElementById('consult');
@@ -183,7 +184,7 @@ form3.onsubmit = function() {
     captcha.innerHTML='';
   }
   else {
-    captcha.innerHTML='Для регистрации необходимо пройти проверку на робота. Для этого подтвердите capthca.';
+    captcha.innerHTML='Для отправки заявки необходимо пройти проверку на робота. Для этого подтвердите capthca.';
   }
 }
 // Get the button that opens the modal
@@ -255,7 +256,7 @@ form1.onsubmit = function() {
     captcha.innerHTML='';
   }
   else {
-    captcha.innerHTML='Для регистрации необходимо пройти проверку на робота. Для этого подтвердите capthca.';
+    captcha.innerHTML='Для отправки заявки необходимо пройти проверку на робота. Для этого подтвердите capthca.';
   }
 }
 // btn4.onclick = function() {
