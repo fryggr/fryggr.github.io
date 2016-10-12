@@ -146,7 +146,7 @@ function recaptchaCallback() {
   authCaptcha = grecaptcha.render('auth_captcha', {
     'sitekey' : '6LccBAkUAAAAAIWOWdJKxDiG3Ci5_y0bmCIjVJic'
   });
-  
+
   authCaptcha2 = grecaptcha.render('auth_captcha2', {
     'sitekey' : '6LccBAkUAAAAAIWOWdJKxDiG3Ci5_y0bmCIjVJic'
   });
@@ -162,13 +162,15 @@ var btn_m = document.getElementById("myBtn-m");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 var captcha = document.getElementsByClassName('captcha-text')[0];
+var captcha1 = document.getElementsByClassName('captcha-text')[1];
+var captcha2 = document.getElementsByClassName('captcha-text')[2];
 // Get the modal
-var modal2 = document.getElementById('myModal2');
+var modal2 = document.getElementById('myForm2');
 modal2.onsubmit = function() {
   event.preventDefault();
   if (grecaptcha.getResponse()!='') {
     modal3.style.display = "block";
-    modal.style.display = "none";
+    //modal.style.display = "none";
     captcha.innerHTML='';
   }
   else {
@@ -181,10 +183,10 @@ form3.onsubmit = function() {
   if (grecaptcha.getResponse()!='') {
     modal3.style.display = "block";
     //modal.style.display = "none";
-    captcha.innerHTML='';
+    captcha2.innerHTML='';
   }
   else {
-    captcha.innerHTML='Для отправки заявки необходимо пройти проверку на робота. Для этого подтвердите capthca.';
+    captcha2.innerHTML='Для отправки заявки необходимо пройти проверку на робота. Для этого подтвердите capthca.';
   }
 }
 // Get the button that opens the modal
@@ -253,10 +255,10 @@ form1.onsubmit = function() {
   event.preventDefault();
   if (grecaptcha.getResponse()!='') {
     modal3.style.display = "block";
-    captcha.innerHTML='';
+    captcha1.innerHTML='';
   }
   else {
-    captcha.innerHTML='Для отправки заявки необходимо пройти проверку на робота. Для этого подтвердите capthca.';
+    captcha1.innerHTML='Для отправки заявки необходимо пройти проверку на робота. Для этого подтвердите capthca.';
   }
 }
 // btn4.onclick = function() {
