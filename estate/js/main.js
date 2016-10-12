@@ -173,6 +173,7 @@ modal2.onsubmit = function() {
     modal3.style.display = "block";
     //modal.style.display = "none";
     captcha.innerHTML='';
+    grecaptcha.reset(authCaptcha);
   }
   else {
     captcha.innerHTML='Для отправки заявки необходимо пройти проверку на робота. Для этого подтвердите capthca.';
@@ -185,6 +186,7 @@ form3.onsubmit = function() {
     modal3.style.display = "block";
     //modal.style.display = "none";
     captcha2.innerHTML='';
+    grecaptcha.reset(feedbackCaptcha);
   }
   else {
     captcha2.innerHTML='Для отправки заявки необходимо пройти проверку на робота. Для этого подтвердите capthca.';
@@ -257,6 +259,7 @@ form1.onsubmit = function() {
   if (grecaptcha.getResponse()!='') {
     modal3.style.display = "block";
     captcha1.innerHTML='';
+    grecaptcha.reset(authCaptcha2);
   }
   else {
     captcha1.innerHTML='Для отправки заявки необходимо пройти проверку на робота. Для этого подтвердите capthca.';
