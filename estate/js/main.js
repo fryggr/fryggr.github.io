@@ -169,7 +169,7 @@ var modal3 = document.getElementById('myModal3');
 var modal2 = document.getElementById('myForm2');
 modal2.onsubmit = function() {
   event.preventDefault();
-  if (authCaptcha.grecaptcha.getResponse()!='') {
+  if (grecaptcha.getResponse(authCaptcha)!='') {
     modal3.style.display = "block";
     modal.style.display = "none";
     captcha.innerHTML='';
@@ -182,7 +182,7 @@ modal2.onsubmit = function() {
 var form3 = document.getElementById('consult');
 form3.onsubmit = function() {
   event.preventDefault();
-  if (feedbackCaptcha.grecaptcha.getResponse()!='') {
+  if (grecaptcha.getResponse(feedbackCaptcha)!='') {
     modal3.style.display = "block";
   //  modal.style.display = "none";
     captcha2.innerHTML='';
@@ -256,7 +256,7 @@ var span3 = document.getElementsByClassName("close")[2];
 // When the user clicks on the button, open the modal
 form1.onsubmit = function() {
   event.preventDefault();
-  if (authCaptcha2.grecaptcha.getResponse()!='') {
+  if (grecaptcha.getResponse(authCaptcha2)!='') {
     modal3.style.display = "block";
     captcha1.innerHTML='';
     grecaptcha.reset(authCaptcha2);
