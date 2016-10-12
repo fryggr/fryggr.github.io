@@ -10,12 +10,12 @@
 	<!--script(type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js")-->
 	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
 	<!--script(src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript")-->
-	<script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript"></script>
+	<!-- <script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript"></script> -->
 	<!--link(href="//yandex.st/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet")-->
 	<!--script(src="//yandex.st/jquery/2.0.3/jquery.min.js" type="text/javascript") -->
 	<!--script(src="//api-maps.yandex.ru/2.1/?lang=ru_RU&mode=debug" type="text/javascript")-->
 	<!--script(type='text/javascript' src="js/yapi.js")-->
-	<script type="text/javascript" src="js/ymap.js"></script>
+	<!-- <script type="text/javascript" src="js/ymap.js"></script> -->
 </head>
 <!DOCTYPE html>
 <html lang="ru">
@@ -1018,18 +1018,21 @@
 							<li>Или заполните форму консультации</li>
 						</ul>
 					</div>
-					<form action="#" method="get" id="consult">
+					<form action="#" method="get" id="myForm2">
 						<label for="name">
-							<input type="text" name="name" id="name" placeholder="Ваше имя">
+							<input type="text" required="" name="name" id="name" placeholder="Ваше имя">
 						</label>
 						<label for="tel">
-							<input type="text" name="tel" id="tel" placeholder="Ваш телефон">
+							<input type="text" required="" name="tel" id="tel" placeholder="Ваш телефон">
 						</label>
 						<label for="name">
-							<textarea name="text" id="name" placeholder="Ваш комментарий"></textarea>
+							<textarea name="text" required="" id="name" placeholder="Ваш комментарий"></textarea>
 						</label>
+						<!-- <div class="g-recaptcha" data-sitekey="6LccBAkUAAAAAIWOWdJKxDiG3Ci5_y0bmCIjVJic"></div> -->
+						<div id="auth_captcha"></div>
+						<input type="submit" class="choice-btn" id="myBtn2" value="Отправить запрос" >
 					</form>
-					<div class="form-btn" id="myBtn2">отправить заявку</div>
+					<!-- <div class="form-btn" id="myBtn2">отправить заявку</div> -->
 				</div>
 		  </div>
 		</div>
@@ -1051,22 +1054,24 @@
 			<div class="choice__text"><span>146 </span>квартир в базе, подберем и перезвоним в течение <span>15 минут.</span>
 				<br>Подбор квартир по индивидуальным параметрам.</div>
 			<div class="choice__form">
-				<form action="#" method="get">
+				<form action="" id = "myForm1">
 					<label for="name">Имя
 						<br>
-						<input type="text" name="name" id="name" placeholder="Ваше имя">
+						<input required type="text" name="name" id="name" placeholder="Ваше имя" >
 					</label>
 					<label for="tel">Телефон
 						<br>
-						<input type="text" name="tel" id="tel" placeholder="Ваш телефон">
+						<input required type="text" name="tel" id="tel" placeholder="Ваш телефон">
 					</label>
-					<label for="name">Свободное поле для ввода
+					<label for="text">Свободное поле для ввода
 						<br>
-						<textarea name="text" id="name" placeholder="Наименование квартиры"></textarea>
+						<textarea required name="text" id="text" placeholder="Наименование квартиры" ></textarea>
 					</label>
+					<div class="g-recaptcha" data-sitekey="6LccBAkUAAAAAIWOWdJKxDiG3Ci5_y0bmCIjVJic"></div>
+					<input type="submit" class="choice-btn" id="myBtn3" value="Отправить запрос" >
 				</form>
-				<div class="choice-btn"  id="myBtn3">Отправить запрос</div>
-				<div class="choice-view"><a href="#">заявка на просмотр квартиры</a></div>
+				<!-- <div class="choice-btn" id="myBtn3">Отправить запрос</div> -->
+				<!-- <div class="choice-view"><a href="#">заявка на просмотр квартиры</a></div> -->
 				<div id="myModal3" class="modal">
 					<div class="modal-content">
 
@@ -1347,16 +1352,20 @@
 			</div>
 			<form action="#" method="get" id="consult">
 				<label for="name">
-					<input type="text" name="name" id="name" placeholder="Ваше имя">
+					<input required="" type="text" name="name" id="name" placeholder="Ваше имя">
 				</label>
 				<label for="tel">
-					<input type="text" name="tel" id="tel" placeholder="Ваш телефон">
+					<input required="" type="text" name="tel" id="tel" placeholder="Ваш телефон">
 				</label>
 				<label for="name">
-					<textarea name="text" id="name" placeholder="Ваш комментарий"></textarea>
+					<textarea required="" name="text" id="name" placeholder="Ваш комментарий"></textarea>
 				</label>
+				<!-- <div class="g-recaptcha" data-sitekey="6LccBAkUAAAAAIWOWdJKxDiG3Ci5_y0bmCIjVJic"></div> -->
+				<div id="feedback_captcha"></div>
+				<div class="captcha-text"></div>
+				<input type="submit" class="choice-btn" id="myBtn4" value="Отправить запрос" >
 			</form>
-			<div class="form-btn" id="myBtn4">отправить заявку</div>
+			<!-- <div class="form-btn" id="myBtn4">отправить заявку</div> -->
 		</div>
 	</div>
 	<footer>
@@ -1382,12 +1391,12 @@
 			</div>
 			<div class="menu">
 				<ul>
-					<li><a href="#apart">Квартиры</a></li>
-					<li class="mobile-none"><a href="#YMapsID">Местоположение	</a></li>
-					<li class="mobile-none"><a href="#YMapsID">Инфраструктура		</a></li>
-					<li class="desktop-none"><a href="#YMapsID-mobile">Местоположение	</a></li>
-					<li class="desktop-none"><a href="#YMapsID-mobile">Инфраструктура				</a></li>
 					<li><a href="#office">Офис продаж</a></li>
+					<li class="mobile-none"><a href="#YMapsID">Инфраструктура		</a></li>
+					<li class="desktop-none"><a href="#YMapsID-mobile">Инфраструктура				</a></li>
+					<li class="desktop-none"><a href="#YMapsID-mobile">Местоположение	</a></li>
+					<li class="mobile-none"><a href="#YMapsID">Местоположение	</a></li>
+					<li><a href="#apart">Квартиры</a></li>
 				</ul>
 				<div class="mobile-none">Copyright © 2016. ЖК Дирижабль </div>
 			</div>
@@ -1408,3 +1417,4 @@
 <script type="text/javascript" src="js/tabs.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script src="js/lightbox.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=recaptchaCallback&render=explicit" async defer></script>

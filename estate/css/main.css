@@ -828,8 +828,34 @@ header {
     height: 35px;
     color: #28aaf4;
     font-family: PTSansItalic, sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 13px;
     margin-top: 11px
+}
+.select-apartments__choice .choice__form .choice-btn, .main-consult__form .choice-btn  {
+  background: url(../img/choice-btn.png) no-repeat;
+  color: #3f5d1d;
+  text-shadow: 0 1px 1px rgba(250, 250, 250, .5);
+  font-size: 14px;
+  font-family: PTSansItalic, sans-serif;
+  text-align: center;
+  width: 165px;
+  cursor: pointer;
+  line-height: 31px;
+  height: 45px;
+  margin-top: 15px;
+  /*margin-left: -10px;*/
+  float: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding-bottom: 13px;
+}
+.main-consult__form .g-recaptcha > div {
+  margin: auto;
+}
+.select-apartments__choice .choice__form .choice-btn:hover {
+    background: url(../img/choice-btn.png) 0 -45px no-repeat
 }
 .select-apartments__choice .choice__form textarea {
     height: 104px;
@@ -1454,6 +1480,9 @@ footer .contacts ul, footer .menu ul {
     content: '';
     clear: both;
     padding: 0
+}
+footer .menu ul li {
+  display: block;
 }
 footer .contacts ul li, footer .menu ul li {
     float: left;
