@@ -164,6 +164,7 @@ var span = document.getElementsByClassName("close")[0];
 var captcha = document.getElementsByClassName('captcha-text')[0];
 var captcha1 = document.getElementsByClassName('captcha-text')[1];
 var captcha2 = document.getElementsByClassName('captcha-text')[2];
+var modal3 = document.getElementById('myModal3');
 // Get the modal
 var modal2 = document.getElementById('myForm2');
 modal2.onsubmit = function() {
@@ -242,7 +243,7 @@ window.onclick = function(event) {
 }
 
 // Get the modal
-var modal3 = document.getElementById('myModal3');
+
 
 
 // Get the button that opens the modal
