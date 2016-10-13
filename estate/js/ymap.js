@@ -197,7 +197,7 @@
                           ballonOpen: true,
                           //behaviors:['default', 'scrollZoom']
                       });
-                      //myMapMobile.behaviors.disable(['drag', 'scrollZoom', 'multiTouch']);
+                      myMapMobile.behaviors.disable(['drag', 'scrollZoom', 'multiTouch']);
                       //myMapMobile.behaviors.disable('scrollZoom');
                       //myMapMobile.behaviors.disable('drag');
                       //myMapMobile.behaviors.disable(['drag', 'scrollZoom', 'multiTouch']);
