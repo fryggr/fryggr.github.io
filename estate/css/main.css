@@ -501,7 +501,7 @@ header {
 #slides .slidesNext, #slides .slidesPrevious, #slides2 .slidesNext, #slides2 .slidesPrevious {
     position: absolute;
     top: 48%;
-    left: 20%;
+  /*  left: 20%;*/
     width: 88px;
     height: 88px;
     margin-top: -32px;
@@ -511,14 +511,14 @@ header {
     overflow: hidden;
     background: url(../img/navigation-previous.png) no-repeat
 }
-#slides2 .slidesNext, #slides2 .slidesPrevious {
+#slides2 .slidesPrevious {
   left: 6%;
 }
 #slides .slidesNext, #slides2 .slidesNext {
-    left: 75%;
+    /*left: 75%;*/
     background: url(../img/navigation-next.png) no-repeat
 }
-#slides2 .slidesNext {
+#slides .slidesNext, #slides2 .slidesNext {
       right: 6%;
 }
 .slidesPagination {
@@ -2090,9 +2090,9 @@ ul.thumbs img {
     #slides .slidesPrevious, #slides2 .slidesPrevious {
         left: 2%
     }
-    #slides .slidesNext, #slides2 .slidesNext {
+    /*#slides .slidesNext, #slides2 .slidesNext {
         left: 70%
-    }
+    }*/
     #YMapsID-mobile {
         width: auto;
         height: 500px
