@@ -162,7 +162,7 @@
                           zoom: 15,
                           behaviors: ['drag', 'scrollZoom', 'multiTouch'],
                       });
-                        myMapMobile.behaviors.disable(['drag']);
+                        myMapMobile.behaviors.disable([]);
                       myMapMobile.controls
                       // Кнопка изменения масштаба.
                       .add('zoomControl', { left: 5, top: 5 })
