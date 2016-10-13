@@ -197,7 +197,9 @@
                           ballonOpen: true,
                           //behaviors:['default', 'scrollZoom']
                       });
-                      myMapMobile.behaviors.disable(['drag']);
+                      //myMapMobile.behaviors.disable(['drag', 'scrollZoom', 'multiTouch']);
+                      myMapMobile.behaviors.disable('scrollZoom');
+                      myMapMobile.behaviors.disable('drag');
                       //myMapMobile.behaviors.disable(['drag', 'scrollZoom', 'multiTouch']);
                         // Отключаем часть включенных по умолчанию поведений:
                         //  - drag - перемещение карты при нажатой левой кнопки мыши;
