@@ -1,7 +1,14 @@
 $(function(){
  $("#slides").slides({
-   width: 333,
-   height: 709,
+   //width: 333,
+   //height: 709,
+   responsive: true
+ });
+});
+$(function(){
+ $("#slides2").slides({
+   width: 1000,
+   height: 800,
    responsive: true
  });
 });
