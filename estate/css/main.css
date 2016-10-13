@@ -2018,8 +2018,11 @@ ul.thumbs img {
         left: 16px;
         padding-left: 18px
     }
-    #YMapsID-mobile, .main-social__icons {
+    #YMapsID-mobile, .main-social__icons, .main-map-mobile {
         position: relative
+    }
+    .main-map-mobile >a >img{
+      width: 100%;
     }
     .main-info__title {
         font-size: 19px
