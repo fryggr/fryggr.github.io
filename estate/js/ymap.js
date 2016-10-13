@@ -156,7 +156,7 @@
 
 
                   myPlacemark.balloon.open();
-
+/*
                   var myMapMobile = new ymaps.Map("YMapsID-mobile", {
                           center: [55.66590475, 37.54770428],
                           zoom: 15,
@@ -210,7 +210,7 @@
                       // Добавляем все метки на карту.
                       myMapMobile.geoObjects.add(myPlacemarkMobile);
 
-
+*/
 
 
 
