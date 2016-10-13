@@ -160,7 +160,7 @@
                   var myMapMobile = new ymaps.Map("YMapsID-mobile", {
                           center: [55.66590475, 37.54770428],
                           zoom: 15,
-                          behaviors: ['scrollZoom'],
+                          behaviors: ['drag', 'scrollZoom', 'multiTouch'],
                       });
                         myMapMobile.behaviors.disable('scrollZoom');
                       myMapMobile.controls
@@ -198,7 +198,7 @@
                           //behaviors:['default', 'scrollZoom']
                       });
                       //myMapMobile.behaviors.disable(['drag', 'scrollZoom', 'multiTouch']);
-                      myMapMobile.behaviors.disable('scrollZoom');
+                      //myMapMobile.behaviors.disable('scrollZoom');
                       //myMapMobile.behaviors.disable('drag');
                       //myMapMobile.behaviors.disable(['drag', 'scrollZoom', 'multiTouch']);
                         // Отключаем часть включенных по умолчанию поведений:
