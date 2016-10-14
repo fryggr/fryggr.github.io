@@ -1,15 +1,15 @@
 $(function(){
  $("#slides").slides({
-   //width: 333,
-   //height: 709,
-   responsive: true
+   width: 333,
+  height: 709,
+   //responsive: true
  });
 });
 $(function(){
  $("#slides2").slides({
-   width: 1000,
-   height: 800,
-   responsive: true
+   //width: 1000,
+   //height: 800,
+   //responsive: true
  });
 });
 $( document ).on( "ready", function() {
@@ -112,6 +112,38 @@ $(document).ready(function(){
     navText: ["", ""],
     responsive: true
   });
+  $("#owl-estate").owlCarousel({
+
+     nav : true, // Show next and prev buttons
+     slideSpeed : 300,
+     paginationSpeed : 400,
+     singleItem:true,
+     navText: ["", ""],
+
+     // "singleItem:true" is a shortcut for:
+     items : 1
+     // itemsDesktop : false,
+     // itemsDesktopSmall : false,
+     // itemsTablet: false,
+     // itemsMobile : false
+
+ });
+ $("#owl-pano").owlCarousel({
+
+    nav : true, // Show next and prev buttons
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    singleItem:true,
+    navText: ["", ""],
+
+    // "singleItem:true" is a shortcut for:
+    items : 1
+    // itemsDesktop : false,
+    // itemsDesktopSmall : false,
+    // itemsTablet: false,
+    // itemsMobile : false
+
+});
 
   $(".form-consult").click(function() {
     $('#consult, .form-btn').css('display', 'block')

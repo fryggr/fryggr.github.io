@@ -511,15 +511,16 @@ header {
     overflow: hidden;
     background: url(../img/navigation-previous.png) no-repeat
 }
-#slides2 .slidesPrevious {
-  left: 6%;
-}
+
 #slides .slidesNext, #slides2 .slidesNext {
     /*left: 75%;*/
     background: url(../img/navigation-next.png) no-repeat
 }
 #slides .slidesNext, #slides2 .slidesNext {
       right: 6%;
+}
+#slides2 .slidesPrevious {
+  left: 6%;
 }
 .slidesPagination {
     display: inline-block;
@@ -1019,6 +1020,29 @@ header {
     top: 0;
     right: 0
 }
+#owl-pano .owl-controls, #owl-estate .owl-controls {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  left: 0
+}
+#owl-pano .owl-controls .owl-nav .owl-prev, #owl-estate .owl-controls .owl-nav .owl-prev {
+    background: url(../img/navigation-previous.png) no-repeat;
+    width: 88px;
+    height:88px;
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+#owl-pano .owl-controls .owl-nav .owl-next, #owl-estate .owl-controls .owl-nav .owl-next {
+    background: url(../img/navigation-next.png) no-repeat;
+    width: 88px;
+    height: 88px;
+    position: absolute;
+    top: 0;
+    right: 5%
+}
+
 .main-developer {
     width: 100%;
     height: 400px;
@@ -1788,6 +1812,32 @@ ul.thumbs img {
 }
 /*---------------------------------------*/
 @media screen and (max-width:768px) {
+  #owl-estate .item img, #owl-pano .item img{
+      display: block;
+      width: 100%;
+      height: auto;
+  }
+  #owl-estate .owl-controls {
+    position: static;
+  }
+  #owl-estate .owl-controls .owl-nav {
+    top: 7px;
+    left: 15px;
+  }
+  #owl-estate .owl-controls .owl-nav .owl-next {
+        left: 40px;
+  }
+  #owl-estate .owl-controls .owl-nav .owl-prev {
+    background: url(../img/page_prev.png) no-repeat;
+    width: 18px;
+    height: 30px;
+    left: 0
+  }
+  #owl-estate .owl-controls .owl-nav .owl-next {
+    background: url(../img/page_next.png) no-repeat;
+    width: 16px;
+    height: 28px;
+  }
   .modal {
         top: 6%;
   }
@@ -2089,6 +2139,13 @@ ul.thumbs img {
     }
     #slides .slidesPrevious, #slides2 .slidesPrevious {
         left: 2%
+    }
+    #slides2 .slidesNext {
+      background: url(../img/page_next.png) no-repeat;
+    }
+    #slides2 .slidesPrevious {
+      left: 6%;
+      background: url(../img/page_prev.png) no-repeat;
     }
     /*#slides .slidesNext, #slides2 .slidesNext {
         left: 70%
