@@ -1825,7 +1825,8 @@ ul.thumbs img {
     left: 15px;
   }
   #owl-estate .owl-controls .owl-nav .owl-next {
-        left: 40px;
+        /*left: 40px;*/
+        right: 29px;
   }
   #owl-estate .owl-controls .owl-nav .owl-prev {
     background: url(../img/page_prev.png) no-repeat;
