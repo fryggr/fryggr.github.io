@@ -119,6 +119,7 @@ $(document).ready(function(){
      paginationSpeed : 400,
      singleItem:true,
      navText: ["", ""],
+     autoHeight : true,
 
      // "singleItem:true" is a shortcut for:
      items : 1
