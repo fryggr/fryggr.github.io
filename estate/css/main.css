@@ -202,7 +202,10 @@ header {
     width: 100%;
     background-position: 0 0;
     background-repeat: repeat;
-    background-image: url(../img/bg-header.png)
+    background-image: url(../img/bg-header.png);
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
 .navbar {
     float: left;
@@ -261,8 +264,9 @@ header {
     /*height: 990px;*/
     height: 1078px;
     position: relative;
-    margin-bottom: 80px;
-    display: block
+    /*margin-bottom: 80px;*/
+    display: block;
+    margin-top: 85px;
 }
 .main-slide:after {
     content: ".";
@@ -388,7 +392,12 @@ header {
 .main-info {
     font-family: PTSansBold, sans-serif;
     text-align: center;
-    margin-top: 12px
+    background-color: #fff;
+    margin-top: -36px;
+    padding-top: 100px;
+    position: relative;
+    z-index: 9;
+    height: 472px;
 }
 .main-info__title {
     font-size: 40px;
