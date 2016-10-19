@@ -1054,7 +1054,8 @@ header {
 
 .main-developer {
     width: 100%;
-    height: 400px;
+    /*height: 400px;*/
+    height: 595px;
     background-color: #f9f9f9;
     text-align: center
 }
@@ -1068,10 +1069,10 @@ header {
 }
 .main-developer__text {
     color: #737373;
-    font-size: 16px;
+    font-size: 24px;
     font-family: PTSansRegular, sans-serif;
     margin-top: 90px;
-    line-height: 1.4;
+    line-height: 1.3;
     text-align: justify;
 }
 .main-developer__text--desc {
@@ -2410,6 +2411,9 @@ padding: 10px 10px;
     .main-developer__title {
         font-size: 19px;
         margin-top: 40px
+    }
+    .main-developer__text--desc {
+      font-size: 15px;
     }
     .main-developer__text {
         margin-top: 0;

@@ -180,15 +180,15 @@ var authCaptcha;
 var authCaptcha2;
 function recaptchaCallback() {
   feedbackCaptcha = grecaptcha.render('feedback_captcha', {
-    'sitekey' : '6LccBAkUAAAAAIWOWdJKxDiG3Ci5_y0bmCIjVJic'
+    'sitekey' : '6LfJogkUAAAAANYoeeOm2AEY2y6FVQ2ElBjdtKFg'
   });
 
   authCaptcha = grecaptcha.render('auth_captcha', {
-    'sitekey' : '6LccBAkUAAAAAIWOWdJKxDiG3Ci5_y0bmCIjVJic'
+    'sitekey' : '6LfJogkUAAAAANYoeeOm2AEY2y6FVQ2ElBjdtKFg'
   });
 
   authCaptcha2 = grecaptcha.render('auth_captcha2', {
-    'sitekey' : '6LccBAkUAAAAAIWOWdJKxDiG3Ci5_y0bmCIjVJic'
+    'sitekey' : '6LfJogkUAAAAANYoeeOm2AEY2y6FVQ2ElBjdtKFg'
   });
 }
 // Get the modal
