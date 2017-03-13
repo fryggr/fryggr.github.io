@@ -37865,6 +37865,9 @@ img.mfp-img {
   text-align: left;
   margin-top: 30px;
 }
+.show-closed em {
+  font-size: 15px
+}
 .show-closed ul li {
   list-style-type: disc;
 }
@@ -37872,5 +37875,9 @@ img.mfp-img {
   text-align: left;
   margin-top: 30px;
   line-height: 1.7;
+}
+.media-credit {
+  margin-top: 10px;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
