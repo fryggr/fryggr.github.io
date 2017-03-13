@@ -37861,5 +37861,16 @@ img.mfp-img {
   right: 0;
   padding-top: 0;
 }
-
+.show-closed {
+  text-align: left;
+  margin-top: 30px;
+}
+.show-closed ul li {
+  list-style-type: disc;
+}
+.event-program {
+  text-align: left;
+  margin-top: 30px;
+  line-height: 1.7;
+}
 /*# sourceMappingURL=style.css.map */
