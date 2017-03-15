@@ -37926,6 +37926,9 @@ h1.caption.kalendar {
 .bg-image-mobile {
   display: none;
 }
+.girl-champagne-mob {
+  display: none;
+}
 @media (max-width: 544px) {
   .section-50 {
     padding-top: 0
@@ -37948,6 +37951,16 @@ h1.caption.kalendar {
   div.shell.text-center h3 {
     display: none;
   }
+  div.shell.text-center h3.frames-mobile {
+    display: block;
+  }
+  .down-slogan {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+  .shell.text-center {
+    margin-bottom: 50px!important;
+  }
   .bio-fred p:nth-child(4) {
     display: none;
   }
@@ -37967,6 +37980,12 @@ h1.caption.kalendar {
   }
   .bg-image-fred {
     display: none;
+  }
+  .girl-champagne {
+    display: none;
+  }
+  .girl-champagne-mob {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
