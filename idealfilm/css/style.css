@@ -37923,4 +37923,50 @@ img.mfp-img {
 h1.caption.kalendar {
   margin-top: 3vh!important;
 }
+.bg-image-mobile {
+  display: none;
+}
+@media (max-width: 544px) {
+  .section-50 {
+    padding-top: 0
+  }
+  div.shell.text-center {
+    margin-top: 0!important;
+  }
+  h1.close-show {
+    margin-top: 0;
+  }
+  div.caption.close-show {
+    font-size: 16px!important;
+    letter-spacing: 0em!important;
+  }
+  h6.veil.reveal-sm-block {
+    display: block!important;
+    font-size: 16px!important;
+    letter-spacing: 0em!important;
+  }
+  div.shell.text-center h3 {
+    display: none;
+  }
+  .bio-fred p:nth-child(4) {
+    display: none;
+  }
+  html .page .offset-top-40 {
+    margin-top: 0;
+  }
+  .bg-image-mobile, .bg-image {
+    flex-basis: 50%;
+    height: 100%;
+    width: 100%;
+    height: 300px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .bg-image-fred {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
