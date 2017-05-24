@@ -17,6 +17,43 @@
 		<![endif]-->
   </head>
   <body>
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter43540684 = new Ya.Metrika({
+                        id:43540684,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/43540684" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-93941059-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
     <!-- Page-->
     <div class="page">
       <!-- Page Header-->
@@ -38,11 +75,11 @@
                   <div class="rd-navbar-cell rd-navbar-nav-wrap">
                       <ul class="rd-navbar-nav">
                           <li><a href="./">Главная</a></li>
-                          <li><a href="#">Билеты</a></li>
+                          <li><a href="buy-ticket.html">Билеты</a></li>
                           <li><a href="about-us.html">Фредерик Бегбедер</a></li>
                           <!-- <li><a href="event.html">Программа мероприятия</a></li> -->
                           <li class="active"><a href="gallery.html">Галерея</a></li>
-                          <li><a href="#">Партнеры</a></li>
+                          <li><a href="partners.html">Партнеры</a></li>
                           <li ><a href="contacts.html">Контакты</a></li>
                       </ul>
                   </div>
@@ -241,8 +278,14 @@
         <section class="bg-image-2 section-50 section-lg-199 section-lg-bottom-244">
           <div style="margin: 150px auto;" class="shell text-center">
             <h3 class="frames-mobile"><span class="down-slogan">Позвольте себе вечер без рамок в компании Октава[Фредерика] Паранго[Бегбедера]…</span><span class="divider"></span></h3>
-              <a href="#" class="btn btn-md btn-default buy-ticket">КУПИТЬ БИЛЕТ</a>
-
+              <div class="get-ticket">Самое время...</div>
+              <a href="buy-ticket.html" class="btn btn-md btn-default buy-ticket">КУПИТЬ БИЛЕТ</a>
+              <div class="teatrall">
+                <a href="https://www.teatrall.ru/" target="_blank" style="color:#ffffff;font-size:20px;font-weight:600;"> 
+                  <img src="https://static.tildacdn.com/tild3039-3730-4636-a564-303338643765/logopodvalpng.png" class="teatrall__img"> 
+                </a> 
+                <div class="teatrall__title"  style="color:#000000;">©&nbsp;2017 All Right Reserved. ТеатрALL ltd.</div>
+              </div>
             <!--<div class="icon icon-md offset-top-20 offset-lg-top-76 icon-default material-icons-graphic_eq"></div>-->
           </div>
         </section>
@@ -256,29 +299,16 @@
                     <div class="brand-name">+7 (495) 730 04 80</div>
                 </div>
                 <div class="cell-sm-6 text-center text-sm-right">
-                    <p> Frédéric Beigbeder • L'Ideal &#169; <span id="copyright-year"></span></p>
+                    <!-- <p> Frédéric Beigbeder • L'Ideal &#169; <span id="copyright-year"></span></p> -->
+                    <p> ООО "ТЕАТРАЛ"</p>
+                    <p> ИНН 7702821258 • КПП 770201001 • ОГРН 1137746756223 </p>
                 </div>
             </div>
         </div>
       </footer>
     </div>
     <!-- RD Audio Player-->
-    <div id="audioPlayer" data-rd-audio-playlist-name="audio-playlist-1" data-rd-audio-loop="true" class="rd-audio">
-      <div class="rd-audio-controls">
-        <div class="rd-audio-controls-left"><a href="#" class="rd-audio-prev fa-backward rd-audio-icon"></a><a href="#" class="rd-audio-play-pause fa-play rd-audio-icon has-controls"></a><a href="#" class="rd-audio-next fa-forward rd-audio-icon"></a></div>
-        <div class="rd-audio-progress-bar-wrap">
-          <div class="rd-audio-time"><span class="rd-audio-current-time">00:00</span><span class="rd-audio-time-divider">/</span><span class="rd-audio-duration">00:00</span></div>
-          <div class="rd-audio-title-wrap"><span class="rd-audio-author"></span><span class="rd-audio-title-divider"> - </span><span class="rd-audio-title"></span></div>
-          <div class="rd-audio-progress-bar">
-            <div class="rd-audio-progress-bar-slider"></div>
-          </div>
-        </div><a href="#" class="rd-audio-volume fa-volume-down rd-audio-icon"></a>
-        <div class="rd-audio-volume-bar">
-          <div class="rd-audio-volume-bar-slider"></div>
-        </div>
-      </div>
-      <div class="rd-audio-close"></div>
-    </div>
+
     <!-- Global Mailform Output-->
     <div id="form-output-global" class="snackbars"></div>
     <!-- PhotoSwipe Gallery-->
