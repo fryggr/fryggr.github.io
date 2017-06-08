@@ -17,15 +17,20 @@ module.exports = {
                 {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['react']
+                        presets: ['react'],
+                        plugins: ['syntax-jsx']
                     }
                 }
               ]
             },
             {
                 test: /\.css$/,
-                loader: "style-loader!css-loader!autoprefixer-loader",
-                exclude: /(node_modules|public)/
+                exclude: /(node_modules|public)/,
+                use: [                
+                    'style-loader',
+                    'css-loader',
+                    'autoprefixer-loader'             
+                ]
             },
             {
                 test: /\.gif$/,
@@ -44,14 +49,18 @@ module.exports = {
                 loader: "url-loader?limit=26000&mimetype=image/svg+xml"
             },
             {
-                test: /\.jsx$/,
-                loader: "react-hot!babel-loader",
+                test: /\.jsx$/,                
                 exclude: /(node_modules|public)/,
+                use: [   
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['react'],
+                            plugins: ['syntax-jsx']
+                        }
+                    }               
+                ]
             }
-            // {
-            //     test: /\.json$/,
-            //     loader: "json-loader"
-            // }
         ]
     }
 }
