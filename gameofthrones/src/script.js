@@ -1,6 +1,6 @@
-var ReactDOM = require('react-dom');
-var React = require('react');
-var PersonsApp = require('./components/PersonsApp.jsx');
+import ReactDOM from 'react-dom';
+import React from 'react';
+import PersonsApp from './components/PersonsApp.jsx';
 
 ReactDOM.render(
   <PersonsApp />,

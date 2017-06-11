@@ -1,19 +1,20 @@
-var React = require('react');
+import React from 'react';
 
-var PersonAdd = React.createClass({
-  getInitialState: function() {
-    return {
-        name: ''
-    };
-  },
+class PersonAdd extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { queryName: '' };
+
+    this.handleTextChange = this.handleTextChange.bind(this);
+  }
  
-  handleTextChange: function(event) {
-    this.setState({name: event.target.value});
-  },
+  handleTextChange(event) {
+    this.setState({ queryName: event.target.value });
+  }
   
-  handleNoteAdd: function(event) {
+  handleNoteAdd(event) {
     var newPerson = {
-      name: this.state.name,
+      name: this.state.queryName,
       id: Date.now(),
       description: '',
       reason: '',
@@ -21,10 +22,10 @@ var PersonAdd = React.createClass({
       weapon: ''
     };
     this.props.onNoteAdd(newPerson);
-    this.setState({ name: '' });
-  }, 
+    this.setState({ queryName: '' });
+  }
   
-  render: function() {
+  render() {
     return (
       <div className="row person-add">
         <div className="col s12">
@@ -35,14 +36,14 @@ var PersonAdd = React.createClass({
                   placeholder="Имя персонажа" 
                   type="text" 
                   className="validate"
-                  value={this.state.name}
-                  onChange={this.handleTextChange}
+                  value={this.state.queryName}
+                  onChange={(event) => this.handleTextChange(event)}
                 />
               </div>
             </div>
             <div className="row">
               <div className="input-field col s12">
-                <button className="btn waves-effect waves-light" onClick={this.handleNoteAdd}>Добавить</button>
+                <button className="btn waves-effect waves-light" onClick={(event) => this.handleNoteAdd(event)}>Добавить</button>
               </div>
             </div>
           
@@ -50,6 +51,6 @@ var PersonAdd = React.createClass({
       </div>
     );
   }
- });
+};
 
-module.exports = PersonAdd;
+export default PersonAdd;

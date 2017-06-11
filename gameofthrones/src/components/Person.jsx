@@ -1,7 +1,7 @@
-var React = require('react');
+import React from 'react';
 
-var Person = React.createClass({
-  render: function() {
+class Person extends React.Component {
+  render() {
     return (
       <tr>
         <td> {this.props.name} </td>
@@ -13,6 +13,6 @@ var Person = React.createClass({
       </tr>
     );
   }
-});
+};
 
-module.exports = Person;
+export default Person;

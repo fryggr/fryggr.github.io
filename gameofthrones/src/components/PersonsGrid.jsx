@@ -1,11 +1,11 @@
-var React = require('react');
-var Person = require('./Person.jsx');
+import React from 'react';
+import Person from './Person.jsx';
 
-var PersonsGrid = React.createClass({
+class PersonsGrid extends React.Component {
   
-  render: function() {
-    var onPersonDelete = this.props.onPersonDelete;
-    var onPersonsSort = this.props.onPersonsSort;
+  render() {
+    let onPersonDelete = this.props.onPersonDelete;
+    let onPersonsSort = this.props.onPersonsSort;
     return (
       <table className="bordered">
         <thead>
@@ -20,8 +20,8 @@ var PersonsGrid = React.createClass({
         </thead>
         <tbody>
           {
-            this.props.persons.map(function(el) {
-              return <Person
+            this.props.persons.map(el =>
+              <Person
                 key={el.id}
                 name={el.name}
                 description={el.description}
@@ -29,13 +29,13 @@ var PersonsGrid = React.createClass({
                 killer={el.killer}
                 weapon={el.weapon}
                 onDelete={onPersonDelete.bind(null, el)}
-              />;
-            }) 
+              />
+            ) 
           }
         </tbody>
       </table>
       );
   }
-});
+};
 
-module.exports = PersonsGrid;
+export default PersonsGrid;

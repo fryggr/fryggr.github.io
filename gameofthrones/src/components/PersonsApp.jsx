@@ -1,46 +1,48 @@
-var React = require('react');
-var PersonsGrid = require('./PersonsGrid.jsx');
-var PersonAdd = require('./PersonAdd.jsx');
-var PersonsEditor = require('./PersonsEditor.jsx');
-var PERSONS = require('./persons.json');
+import React from 'react';
+import PersonsGrid from './PersonsGrid.jsx';
+import PersonAdd from './PersonAdd.jsx';
+import PersonsEditor from './PersonsEditor.jsx';
+import persons from './persons.json';
 
-var PersonsApp = React.createClass({
-  getInitialState: function() {
-    return {
-        persons: PERSONS
-    };
-  },
+class PersonsApp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { persons };
+
+    this.handleSort = this.handleSort.bind(this);
+    this.handlePersonDelete = this.handlePersonDelete.bind(this);
+    this.handleSearchPerson = this.handleSearchPerson.bind(this);
+    this.handleNoteAdd = this.handleNoteAdd.bind(this);
+  }
   
-  componentDidMount: function() {
+  componentDidMount() {
     this.sortVariable = false;
-  },
+  }
 
-  handlePersonDelete: function(person) {
-    var personId = person.id;
-    var newPersons = this.state.persons.filter(function(person) {
+  handlePersonDelete(person) {
+    let personId = person.id;
+    let newPersons = this.state.persons.filter(function(person) {
         return person.id !== personId;
     });
     this.setState({ persons: newPersons });
-  },
+  }
   
-  handleSearchPerson: function(query) {
+  handleSearchPerson(query) {
     this.setState({ persons: query });
-  },
-  
-  
-  handleNoteAdd: function(newPerson) {
-    var newPersons = this.state.persons.slice();
+  }
+    
+  handleNoteAdd(newPerson) {
+    let newPersons = this.state.persons.slice();
     newPersons.unshift(newPerson);
     this.setState({ persons: newPersons });
-  },
+  }
   
-  handleSort: function(event) {
-    var sortQuery = event.target.getAttribute('data-type');
+  handleSort(event) {
+    let sortQuery = event.target.getAttribute('data-type');
 
-    var sortPersons = (a, b) => {
-        var key = sortQuery;
-        var rowA = a[key];
-        var rowB = b[key];
+    let sortPersons = (a, b) => {
+        let rowA = a[sortQuery];
+        let rowB = b[sortQuery];
       if (this.sortVariable) {
         if (rowA > rowB) return 1
         else return -1;
@@ -49,11 +51,11 @@ var PersonsApp = React.createClass({
       else return -1;
     };
     this.sortVariable = !this.sortVariable;
-    var newPersons = this.state.persons.sort(sortPersons);
+    let newPersons = this.state.persons.sort(sortPersons);
     this.setState({ persons: newPersons });
-  },
+  }
   
-  render: function() {
+  render() {
     return (
       <div className="notes-app">
         <PersonsEditor persons={this.state.persons} onSearchPerson={this.handleSearchPerson}/>
@@ -66,6 +68,6 @@ var PersonsApp = React.createClass({
       </div>
     );
   }
-});
+};
 
-module.exports = PersonsApp;
+export default PersonsApp;
