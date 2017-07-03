@@ -69,12 +69,12 @@ window.onscroll = function(e) {
 
 document.body.addEventListener('mousewheel', function(e) {
 	
-	if( e.wheelDelta < 100 ) {
+	if( e.wheelDelta < 0 ) {
 		 pageHeader.classList.remove('is-maximized');
 		pageHeader.classList.add('is-minimized');
         
     }
-    else if(e.wheelDelta >= 0){
+    else if((e.wheelDelta >= 0)||(e.wheelDelta < 100)){
 		pageHeader.classList.remove('is-minimized');
        pageHeader.classList.add('is-maximized');
     }
