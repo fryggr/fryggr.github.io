@@ -74,7 +74,7 @@ document.body.addEventListener('mousewheel', function(e) {
 		pageHeader.classList.add('is-minimized');
         
     }
-    else if((e.wheelDelta >= 0)||(e.wheelDelta < 100)){
+    else if((e.wheelDelta >= 0)||(e.wheelDelta !== -120)){
 		pageHeader.classList.remove('is-minimized');
        pageHeader.classList.add('is-maximized');
     }
