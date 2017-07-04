@@ -52,36 +52,9 @@ var pageTe = function(yofsset) {
     }
 }    
 
-window.onscroll = function(e) {
-
-	if( pageTe(window.pageYOffset) === true ) {
-	    pageHeader.classList.remove('is-maximized');
-		pageHeader.classList.add('is-minimized');
-	}
-	else if ( pageTe(window.pageYOffset) === false ) {
-	    pageHeader.classList.remove('is-minimized');
-       pageHeader.classList.add('is-maximized');
-
-}
-
-};
-
-
-document.body.addEventListener('mousewheel', function(e) {
-	
-	if( e.wheelDelta < 0 ) {
-		 pageHeader.classList.remove('is-maximized');
-		pageHeader.classList.add('is-minimized');
-        
-    }
-    else if((e.wheelDelta >= 0)||(e.wheelDelta !== -120)){
-		pageHeader.classList.remove('is-minimized');
-       pageHeader.classList.add('is-maximized');
-    }
-});
 
 burgerMenu.addEventListener('click', function(e) {
-	console.log(e);
+	
 	headerMobile.classList.add('active');
 });
 
@@ -91,6 +64,44 @@ burgerClose.addEventListener('click', function(e) {
 
 document.addEventListener("DOMContentLoaded", function() {
 	document.body.classList.remove('preload');
-	pageHeader.classList.remove('is-maximized');
-	pageHeader.classList.remove('is-minimized');
+	
+	if (window.innerWidth > '1024'){
+
+		window.onscroll = function(e) {
+			// console.log(window.pageYOffset);
+			if( pageTe(window.pageYOffset) === true ) {
+			    pageHeader.classList.remove('is-maximized');
+				pageHeader.classList.add('is-minimized');
+			}
+			else if ( pageTe(window.pageYOffset) === false ) {
+				// console.log(window.pageYOffset);
+			    pageHeader.classList.remove('is-minimized');
+		       pageHeader.classList.add('is-maximized');
+
+			}
+		};
+
+		document.body.addEventListener('mousewheel', function(e) {
+			
+			if( e.wheelDelta < 0 ) {
+				console.log(e.wheelDelta);
+				 pageHeader.classList.remove('is-maximized');
+				pageHeader.classList.add('is-minimized');
+		        
+		    }
+		    else if(e.wheelDelta > 0){
+		    	console.log(e.wheelDelta);
+				pageHeader.classList.remove('is-minimized');
+		       pageHeader.classList.add('is-maximized');
+		    }
+		});
+
+		
+		pageHeader.classList.remove('is-maximized');
+		pageHeader.classList.remove('is-minimized');
+	}
+	else {
+		pageHeader.classList.add('mobile');
+	}
+
 });
