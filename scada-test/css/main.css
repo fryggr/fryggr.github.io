@@ -41,6 +41,9 @@ p {
     right: 0;
     visibility: visible;
 }
+.page-header.mobile {
+	position: relative;
+}
 .page-header.is-minimized {
 	visibility: hidden;
 	-webkit-transform: translateY(-100%);
@@ -860,7 +863,7 @@ p {
 @media (max-width: 1024px) {
 	.start-home {
 		padding: 0;
-	    padding-top: 116px;
+/* 	    padding-top: 116px; */
 	}
 	.container--home {
 		width: 1024px;
