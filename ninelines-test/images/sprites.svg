@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<path id="pointer-a" d="M327.657 750.858c-2.808 4.301-8.545 5.425-12.791 2.58l-41.031-37.44 51.311 21.906c4.21 2.882 5.35 8.695 2.51 12.954z"/>
+	</defs>
+<symbol id="pointer" viewBox="0 0 57 39">
+	<use fill="#3e3d40" transform="translate(-273 -716)" xlink:href="#pointer-a"/>
+</symbol>
+</svg>
